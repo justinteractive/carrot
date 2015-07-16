@@ -1,0 +1,1768 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* line 5, ../sass/_company.scss */
+.anecdote {
+  padding: 80px 20px;
+  text-align: center;
+}
+/* line 9, ../sass/_company.scss */
+.anecdote p {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+}
+
+/* line 15, ../sass/_company.scss */
+ul.management {
+  display: block;
+}
+
+/* line 18, ../sass/_company.scss */
+ul.engineering {
+  display: none;
+}
+
+/* line 21, ../sass/_company.scss */
+ul.product {
+  display: none;
+}
+
+/* line 24, ../sass/_company.scss */
+.profile {
+  display: none;
+}
+
+/* line 28, ../sass/_company.scss */
+.carrot-confidential {
+  width: 100%;
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+/* This is the default Tooltipster theme (feel free to modify or duplicate and create multiple themes!): */
+/* line 2, ../sass/_tooltips.scss */
+.tooltipster-default {
+  border-radius: 5px;
+  border: 2px solid #000;
+  background: #4c4c4c;
+  color: #fff;
+}
+
+/* Use this next selector to style things like font-size and line-height: */
+/* line 10, ../sass/_tooltips.scss */
+.tooltipster-default .tooltipster-content {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 8px 10px;
+  overflow: hidden;
+}
+
+/* This next selector defines the color of the border on the outside of the arrow. This will automatically match the color and size of the border set on the main tooltip styles. Set display: none; if you would like a border around the tooltip but no border around the arrow */
+/* line 19, ../sass/_tooltips.scss */
+.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border {
+  /* border-color: ... !important; */
+}
+
+/* If you're using the icon option, use this next selector to style them */
+/* line 25, ../sass/_tooltips.scss */
+.tooltipster-icon {
+  cursor: help;
+  margin-left: 4px;
+}
+
+/* This is the base styling required to make all Tooltipsters work */
+/* line 38, ../sass/_tooltips.scss */
+.tooltipster-base {
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999999;
+  pointer-events: none;
+  width: auto;
+  overflow: visible;
+}
+
+/* line 50, ../sass/_tooltips.scss */
+.tooltipster-base .tooltipster-content {
+  overflow: hidden;
+}
+
+/* These next classes handle the styles for the little arrow attached to the tooltip. By default, the arrow will inherit the same colors and border as what is set on the main tooltip itself. */
+/* line 56, ../sass/_tooltips.scss */
+.tooltipster-arrow {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* line 66, ../sass/_tooltips.scss */
+.tooltipster-arrow span, .tooltipster-arrow-border {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+/* line 72, ../sass/_tooltips.scss */
+.tooltipster-arrow-top span, .tooltipster-arrow-top-right span, .tooltipster-arrow-top-left span {
+  border-left: 8px solid transparent !important;
+  border-right: 8px solid transparent !important;
+  border-top: 8px solid;
+  bottom: -7px;
+}
+
+/* line 78, ../sass/_tooltips.scss */
+.tooltipster-arrow-top .tooltipster-arrow-border, .tooltipster-arrow-top-right .tooltipster-arrow-border, .tooltipster-arrow-top-left .tooltipster-arrow-border {
+  border-left: 9px solid transparent !important;
+  border-right: 9px solid transparent !important;
+  border-top: 9px solid;
+  bottom: -7px;
+}
+
+/* line 85, ../sass/_tooltips.scss */
+.tooltipster-arrow-bottom span, .tooltipster-arrow-bottom-right span, .tooltipster-arrow-bottom-left span {
+  border-left: 8px solid transparent !important;
+  border-right: 8px solid transparent !important;
+  border-bottom: 8px solid;
+  top: -7px;
+}
+
+/* line 91, ../sass/_tooltips.scss */
+.tooltipster-arrow-bottom .tooltipster-arrow-border, .tooltipster-arrow-bottom-right .tooltipster-arrow-border, .tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+  border-left: 9px solid transparent !important;
+  border-right: 9px solid transparent !important;
+  border-bottom: 9px solid;
+  top: -7px;
+}
+
+/* line 97, ../sass/_tooltips.scss */
+.tooltipster-arrow-top span, .tooltipster-arrow-top .tooltipster-arrow-border, .tooltipster-arrow-bottom span, .tooltipster-arrow-bottom .tooltipster-arrow-border {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* line 102, ../sass/_tooltips.scss */
+.tooltipster-arrow-top-left span, .tooltipster-arrow-bottom-left span {
+  left: 6px;
+}
+
+/* line 105, ../sass/_tooltips.scss */
+.tooltipster-arrow-top-left .tooltipster-arrow-border, .tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+  left: 5px;
+}
+
+/* line 108, ../sass/_tooltips.scss */
+.tooltipster-arrow-top-right span, .tooltipster-arrow-bottom-right span {
+  right: 6px;
+}
+
+/* line 111, ../sass/_tooltips.scss */
+.tooltipster-arrow-top-right .tooltipster-arrow-border, .tooltipster-arrow-bottom-right .tooltipster-arrow-border {
+  right: 5px;
+}
+
+/* line 114, ../sass/_tooltips.scss */
+.tooltipster-arrow-left span, .tooltipster-arrow-left .tooltipster-arrow-border {
+  border-top: 8px solid transparent !important;
+  border-bottom: 8px solid transparent !important;
+  border-left: 8px solid;
+  top: 50%;
+  margin-top: -7px;
+  right: -7px;
+}
+
+/* line 122, ../sass/_tooltips.scss */
+.tooltipster-arrow-left .tooltipster-arrow-border {
+  border-top: 9px solid transparent !important;
+  border-bottom: 9px solid transparent !important;
+  border-left: 9px solid;
+  margin-top: -8px;
+}
+
+/* line 128, ../sass/_tooltips.scss */
+.tooltipster-arrow-right span, .tooltipster-arrow-right .tooltipster-arrow-border {
+  border-top: 8px solid transparent !important;
+  border-bottom: 8px solid transparent !important;
+  border-right: 8px solid;
+  top: 50%;
+  margin-top: -7px;
+  left: -7px;
+}
+
+/* line 136, ../sass/_tooltips.scss */
+.tooltipster-arrow-right .tooltipster-arrow-border {
+  border-top: 9px solid transparent !important;
+  border-bottom: 9px solid transparent !important;
+  border-right: 9px solid;
+  margin-top: -8px;
+}
+
+/* Some CSS magic for the awesome animations - feel free to make your own custom animations and reference it in your Tooltipster settings! */
+/* line 146, ../sass/_tooltips.scss */
+.tooltipster-fade {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+
+/* line 154, ../sass/_tooltips.scss */
+.tooltipster-fade-show {
+  opacity: 1;
+}
+
+/* line 158, ../sass/_tooltips.scss */
+.tooltipster-grow {
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 171, ../sass/_tooltips.scss */
+.tooltipster-grow-show {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+/* line 185, ../sass/_tooltips.scss */
+.tooltipster-swing {
+  opacity: 0;
+  -webkit-transform: rotateZ(4deg);
+  -moz-transform: rotateZ(4deg);
+  -o-transform: rotateZ(4deg);
+  -ms-transform: rotateZ(4deg);
+  transform: rotateZ(4deg);
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+}
+
+/* line 198, ../sass/_tooltips.scss */
+.tooltipster-swing-show {
+  opacity: 1;
+  -webkit-transform: rotateZ(0deg);
+  -moz-transform: rotateZ(0deg);
+  -o-transform: rotateZ(0deg);
+  -ms-transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
+  -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -moz-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -ms-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -o-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+}
+
+/* line 213, ../sass/_tooltips.scss */
+.tooltipster-fall {
+  top: 0;
+  -webkit-transition-property: top;
+  -moz-transition-property: top;
+  -o-transition-property: top;
+  -ms-transition-property: top;
+  transition-property: top;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+/* line 229, ../sass/_tooltips.scss */
+.tooltipster-fall.tooltipster-dying {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  top: 0px !important;
+  opacity: 0;
+}
+
+/* line 239, ../sass/_tooltips.scss */
+.tooltipster-slide {
+  left: -40px;
+  -webkit-transition-property: left;
+  -moz-transition-property: left;
+  -o-transition-property: left;
+  -ms-transition-property: left;
+  transition-property: left;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+/* line 255, ../sass/_tooltips.scss */
+.tooltipster-slide.tooltipster-dying {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  left: 0px !important;
+  opacity: 0;
+}
+
+/* CSS transition for when contenting is changing in a tooltip that is still open. The only properties that will NOT transition are: width, height, top, and left */
+/* line 267, ../sass/_tooltips.scss */
+.tooltipster-content-changing {
+  opacity: 0.5;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 17, ../sass/main.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 25, ../sass/main.scss */
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 36, ../sass/main.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 41, ../sass/main.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 50, ../sass/main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 64, ../sass/main.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 75, ../sass/main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 85, ../sass/main.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+/* line 93, ../sass/main.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 103, ../sass/main.scss */
+body {
+  background-color: #f0f0f0;
+  color: #4a4a4a;
+}
+
+/* line 107, ../sass/main.scss */
+p {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 0 8px 0;
+}
+
+/* line 114, ../sass/main.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 119, ../sass/main.scss */
+hr {
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #fff;
+  margin: 48px 0;
+}
+
+/* line 124, ../sass/main.scss */
+.pure-g-r {
+  padding: 0;
+}
+
+/* line 127, ../sass/main.scss */
+.map {
+  min-height: 280px;
+}
+
+/* line 130, ../sass/main.scss */
+.address {
+  min-height: 280px;
+  background-color: #fff;
+  margin: 0;
+}
+
+/* line 135, ../sass/main.scss */
+.nav {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  height: 64px;
+}
+/* line 141, ../sass/main.scss */
+.nav .logo {
+  position: absolute;
+  height: 64px;
+  width: 160px;
+  z-index: 2;
+  display: block;
+  top: 0;
+  left: 0;
+  background-image: url(../img/noun_carrot_56479.png);
+  background-position: left 20px center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+/* line 154, ../sass/main.scss */
+.nav .logo span {
+  margin-left: 64px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  color: #F5A623;
+  line-height: 64px;
+  font-size: 32px;
+}
+/* line 164, ../sass/main.scss */
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  position: absolute;
+  height: 100%;
+}
+/* line 172, ../sass/main.scss */
+.nav ul li {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 178, ../sass/main.scss */
+.nav ul li a {
+  display: block;
+  padding: 0 20px;
+  height: 100%;
+  font-size: 12px;
+  position: relative;
+  border-left: 1px solid #dcdcdc;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+/* line 188, ../sass/main.scss */
+.nav ul li a span {
+  line-height: 60px;
+}
+/* line 192, ../sass/main.scss */
+.nav ul li a .avatar {
+  float: right;
+  background-image: url(../img/avatars/active-user.jpg);
+  border-width: 1px;
+  margin: 14px 0 0 10px;
+}
+
+/* line 202, ../sass/main.scss */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+/* line 208, ../sass/main.scss */
+body.company .hero {
+  background-image: url(../img/hero/craftsyOffice.jpg);
+}
+/* line 211, ../sass/main.scss */
+body.company .hero.map {
+  background-image: url(../img/hero/craftsy-map.png);
+}
+
+/* line 215, ../sass/main.scss */
+body.team .hero {
+  background-image: url(../img/hero/craftsyTeam.jpg);
+}
+
+/* line 218, ../sass/main.scss */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  border-bottom: 1px solid #dcdcdc;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 227, ../sass/main.scss */
+.hero .stats {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  width: 320px;
+  color: #fff;
+}
+/* line 234, ../sass/main.scss */
+.hero .stats ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 238, ../sass/main.scss */
+.hero .stats ul p {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0 0 -10px 0;
+  padding: 0 0 0 20px;
+}
+/* line 244, ../sass/main.scss */
+.hero .stats ul span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #9b9b9b;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+/* line 253, ../sass/main.scss */
+.hero .stats ul .row {
+  width: 100%;
+}
+/* line 256, ../sass/main.scss */
+.hero .stats ul .row li {
+  background-color: #000;
+  margin-bottom: 1px;
+  padding: 5px 0 7px 0;
+}
+/* line 263, ../sass/main.scss */
+.hero .stats ul .location:hover {
+  background-color: #F5A623;
+  cursor: pointer;
+}
+/* line 270, ../sass/main.scss */
+.hero .company-details {
+  margin: 0;
+  padding: 48px 0 0 0;
+  list-style-type: none;
+}
+/* line 275, ../sass/main.scss */
+.hero .company-details h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(100, 100, 100, 0.5);
+}
+/* line 284, ../sass/main.scss */
+.hero .company-details p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  color: #fff;
+  max-width: 480px;
+  text-shadow: 1px 1px 4px rgba(100, 100, 100, 0.5);
+}
+/* line 294, ../sass/main.scss */
+.hero .company-details a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  color: #F5A623;
+  max-width: 480px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* line 306, ../sass/main.scss */
+.subnav {
+  border-bottom: 1px solid #dcdcdc;
+  position: relative;
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+}
+/* line 313, ../sass/main.scss */
+.subnav ul {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  position: relative;
+}
+/* line 319, ../sass/main.scss */
+.subnav ul li {
+  height: 100%;
+  position: relative;
+}
+/* line 323, ../sass/main.scss */
+.subnav ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  cursor: pointer;
+  opacity: 0.5;
+}
+/* line 337, ../sass/main.scss */
+.subnav ul li a.management {
+  background-image: url(../img/icon-management.png);
+}
+/* line 340, ../sass/main.scss */
+.subnav ul li a.engineering {
+  background-image: url(../img/icon-engineering.png);
+}
+/* line 343, ../sass/main.scss */
+.subnav ul li a.product {
+  background-image: url(../img/icon-product.png);
+}
+/* line 346, ../sass/main.scss */
+.subnav ul li a.people {
+  background-image: url(../img/icon-people.png);
+}
+/* line 349, ../sass/main.scss */
+.subnav ul li a.culture {
+  background-image: url(../img/icon-culture.png);
+}
+/* line 352, ../sass/main.scss */
+.subnav ul li a.work {
+  background-image: url(../img/icon-work.png);
+}
+/* line 355, ../sass/main.scss */
+.subnav ul li a.openings {
+  background-image: url(../img/icon-openings.png);
+}
+/* line 359, ../sass/main.scss */
+.subnav ul li a .label {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+}
+/* line 366, ../sass/main.scss */
+.subnav ul li a.active {
+  color: #F5A623;
+  opacity: 1;
+  background-position: center top;
+}
+/* line 372, ../sass/main.scss */
+.subnav ul li a:hover {
+  opacity: 1;
+}
+/* line 379, ../sass/main.scss */
+.subnav ul.tab-3 {
+  width: 75%;
+}
+/* line 382, ../sass/main.scss */
+.subnav ul.tab-4 {
+  width: 100%;
+}
+
+/* line 387, ../sass/main.scss */
+.profile {
+  display: none;
+  background-color: #fff;
+  border-bottom: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  margin-bottom: 24px;
+}
+/* line 394, ../sass/main.scss */
+.profile .avatar {
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/avatars/sigma-1.jpg);
+}
+/* line 400, ../sass/main.scss */
+.profile .details {
+  padding: 20px;
+  text-align: center;
+}
+/* line 405, ../sass/main.scss */
+.profile .description {
+  padding: 16px 20px 0 20px;
+}
+/* line 409, ../sass/main.scss */
+.profile .buttons {
+  max-width: 70%;
+  margin: 0 auto;
+  max-height: 20px;
+}
+/* line 414, ../sass/main.scss */
+.profile .buttons a.button {
+  padding: 16px 24px;
+  background-image: url(../img/icon-coffee.png);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+}
+
+/* line 422, ../sass/main.scss */
+.buttons {
+  margin-bottom: 36px;
+}
+
+/* line 425, ../sass/main.scss */
+.button {
+  padding: 16px 24px;
+  border-radius: 4px;
+  margin-right: 12px;
+  font-size: 14px;
+}
+/* line 431, ../sass/main.scss */
+.button.primary {
+  text-decoration: none;
+  background-color: #F5A623;
+  color: #fff;
+}
+/* line 436, ../sass/main.scss */
+.button.secondary {
+  text-decoration: none;
+  border-color: #9b9b9b;
+  border-width: 1px;
+  border-style: solid;
+  clear: right;
+}
+/* line 443, ../sass/main.scss */
+.button.secondary span {
+  color: #9b9b9b;
+  text-decoration: none;
+}
+
+/* line 450, ../sass/main.scss */
+.content, .title-bar {
+  padding-top: 24px;
+}
+/* line 453, ../sass/main.scss */
+.content a, .title-bar a {
+  color: #F5A623;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 459, ../sass/main.scss */
+.content .description, .title-bar .description {
+  padding-right: 48px;
+}
+/* line 462, ../sass/main.scss */
+.content h2, .title-bar h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  margin: 0 0 24px 0;
+}
+/* line 468, ../sass/main.scss */
+.content h3, .title-bar h3 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0 0 24px 0;
+}
+/* line 475, ../sass/main.scss */
+.content.culture, .content.work, .content.openings, .title-bar.culture, .title-bar.work, .title-bar.openings {
+  display: none;
+}
+
+/* line 479, ../sass/main.scss */
+.title-bar {
+  text-align: center;
+}
+/* line 482, ../sass/main.scss */
+.title-bar p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0 120px;
+}
+
+/* line 491, ../sass/main.scss */
+.ambassador.panel {
+  padding-top: 0;
+}
+/* line 494, ../sass/main.scss */
+.ambassador h2 {
+  background-color: #F5A623;
+  color: #fff;
+  margin: 0;
+  padding: 20px 0;
+}
+
+/* line 501, ../sass/main.scss */
+.avatar {
+  border-radius: 50%;
+  background-color: #fff;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  box-shadow: 2px 2px 5px #dcdcdc;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 512, ../sass/main.scss */
+.avatar.large {
+  width: 136px;
+  height: 136px;
+}
+/* line 516, ../sass/main.scss */
+.avatar.medium {
+  width: 96px;
+  height: 96px;
+}
+/* line 520, ../sass/main.scss */
+.avatar.small {
+  width: 48px;
+  height: 48px;
+}
+/* line 524, ../sass/main.scss */
+.avatar.tiny {
+  width: 32px;
+  height: 32px;
+}
+/* line 528, ../sass/main.scss */
+.avatar.josh-scott {
+  background-image: url(../img/avatars/josh-scott.jpg);
+}
+/* line 531, ../sass/main.scss */
+.avatar.john-levisay {
+  background-image: url(../img/avatars/john-levisay.jpg);
+}
+/* line 534, ../sass/main.scss */
+.avatar.todd-tobin {
+  background-image: url(../img/avatars/todd-tobin.jpg);
+}
+/* line 537, ../sass/main.scss */
+.avatar.bret-hanna {
+  background-image: url(../img/avatars/bret-hanna.jpg);
+}
+/* line 541, ../sass/main.scss */
+.avatar.sigma-1 {
+  background-image: url(../img/avatars/sigma-1.jpg);
+}
+/* line 544, ../sass/main.scss */
+.avatar.sigma-2 {
+  background-image: url(../img/avatars/sigma-2.jpg);
+}
+/* line 547, ../sass/main.scss */
+.avatar.sigma-3 {
+  background-image: url(../img/avatars/sigma-3.jpg);
+}
+/* line 550, ../sass/main.scss */
+.avatar.sigma-4 {
+  background-image: url(../img/avatars/sigma-4.jpg);
+}
+/* line 553, ../sass/main.scss */
+.avatar.sigma-5 {
+  background-image: url(../img/avatars/sigma-5.jpg);
+}
+/* line 556, ../sass/main.scss */
+.avatar.sigma-6 {
+  background-image: url(../img/avatars/sigma-6.jpg);
+}
+/* line 559, ../sass/main.scss */
+.avatar.sigma-7 {
+  background-image: url(../img/avatars/sigma-7.jpg);
+}
+/* line 562, ../sass/main.scss */
+.avatar.sigma-8 {
+  background-image: url(../img/avatars/sigma-8.jpg);
+}
+/* line 565, ../sass/main.scss */
+.avatar.sigma-9 {
+  background-image: url(../img/avatars/sigma-9.jpg);
+}
+/* line 568, ../sass/main.scss */
+.avatar.front-end {
+  background-image: url(../img/avatars/front-end.png);
+}
+/* line 571, ../sass/main.scss */
+.avatar.ruby {
+  background-image: url(../img/avatars/ruby.png);
+}
+/* line 574, ../sass/main.scss */
+.avatar.sys-ops {
+  background-image: url(../img/avatars/sys-ops.png);
+}
+/* line 577, ../sass/main.scss */
+.avatar.ux {
+  background-image: url(../img/avatars/ux.png);
+}
+/* line 580, ../sass/main.scss */
+.avatar.android {
+  background-image: url(../img/avatars/android.png);
+}
+/* line 583, ../sass/main.scss */
+.avatar.ios {
+  background-image: url(../img/avatars/ios.png);
+}
+/* line 586, ../sass/main.scss */
+.avatar.big-data {
+  background-image: url(../img/avatars/big-data.png);
+}
+/* line 589, ../sass/main.scss */
+.avatar.active-user {
+  background-image: url(../img/avatars/active-user.jpg);
+}
+/* line 593, ../sass/main.scss */
+.avatar .coffee {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  position: absolute;
+  display: block;
+  top: -15px;
+  right: -15px;
+  background-color: #F5A623;
+  background-position: 11px center;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-coffee.png);
+  cursor: pointer;
+}
+/* line 609, ../sass/main.scss */
+.avatar .openings {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  position: absolute;
+  display: block;
+  top: -15px;
+  right: -15px;
+  background-color: #F5A623;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-briefcase.png);
+  cursor: pointer;
+}
+
+/* line 625, ../sass/main.scss */
+.panel {
+  background-color: #fff;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  border: 1px solid #dcdcdc;
+  position: relative;
+}
+/* line 632, ../sass/main.scss */
+.panel h2 {
+  font-size: 24px;
+  padding-left: 24px;
+}
+/* line 637, ../sass/main.scss */
+.panel .icon-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icon-info.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 648, ../sass/main.scss */
+.pure-u-1-4 .avatar {
+  width: 96px;
+  height: 96px;
+}
+
+/* line 652, ../sass/main.scss */
+.pure-u-1-2 .avatar {
+  width: 136px;
+  height: 136px;
+}
+
+/* line 656, ../sass/main.scss */
+ul.grid {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: capitalize;
+}
+/* line 664, ../sass/main.scss */
+ul.grid li {
+  text-align: center;
+}
+/* line 667, ../sass/main.scss */
+ul.grid li a {
+  text-decoration: none;
+  color: #4a4a4a;
+  display: block;
+  padding: 40px 0;
+}
+/* line 673, ../sass/main.scss */
+ul.grid li p {
+  padding: 0 24px;
+  text-transform: none;
+}
+/* line 677, ../sass/main.scss */
+ul.grid li p em {
+  color: #4a4a4a;
+}
+/* line 682, ../sass/main.scss */
+ul.grid li h3 {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 8px 0 0 0;
+}
+/* line 687, ../sass/main.scss */
+ul.grid li h4 {
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #9b9b9b;
+  margin: -4px 0 0 0;
+}
+/* line 696, ../sass/main.scss */
+ul.grid.borders {
+  border-left: 1px solid #dcdcdc;
+  border-top: 1px solid #dcdcdc;
+}
+/* line 702, ../sass/main.scss */
+ul.grid.borders li a {
+  border-bottom: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+}
+
+/* line 709, ../sass/main.scss */
+ul.list {
+  margin: 0;
+  padding: 0;
+}
+/* line 713, ../sass/main.scss */
+ul.list li {
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 8px;
+  padding-left: 48px;
+  background-repeat: no-repeat;
+  background-position: 24px center;
+  min-height: 40px;
+  position: relative;
+}
+/* line 722, ../sass/main.scss */
+ul.list li:first-child {
+  border-top: 1px solid #dcdcdc;
+}
+/* line 726, ../sass/main.scss */
+ul.list li.y-combinator {
+  background-image: url(../img/icon-ycombinator.png);
+}
+/* line 729, ../sass/main.scss */
+ul.list li.felicis-ventures {
+  background-image: url(../img/icon-felicis-ventures.png);
+}
+/* line 732, ../sass/main.scss */
+ul.list li.union-square-ventures {
+  background-image: url(../img/icon-union-square-ventures.png);
+}
+/* line 735, ../sass/main.scss */
+ul.list li.ruby-on-rails {
+  background-image: url(../img/icon-ruby-on-rails.png);
+}
+/* line 738, ../sass/main.scss */
+ul.list li.google-apps {
+  background-image: url(../img/icon-google-apps.png);
+}
+/* line 741, ../sass/main.scss */
+ul.list li.python {
+  background-image: url(../img/icon-python.png);
+}
+/* line 744, ../sass/main.scss */
+ul.list li.django {
+  background-image: url(../img/icon-django.png);
+}
+/* line 747, ../sass/main.scss */
+ul.list li.html5 {
+  background-image: url(../img/icon-html5.png);
+}
+/* line 750, ../sass/main.scss */
+ul.list li.bootstrap {
+  background-image: url(../img/icon-bootstrap.png);
+}
+/* line 753, ../sass/main.scss */
+ul.list li.github {
+  background-image: url(../img/icon-github-2.png);
+}
+/* line 756, ../sass/main.scss */
+ul.list li.mongo {
+  background-image: url(../img/icon-mongo.png);
+}
+/* line 759, ../sass/main.scss */
+ul.list li.ember {
+  background-image: url(../img/icon-ember.png);
+}
+/* line 762, ../sass/main.scss */
+ul.list li.slack {
+  background-image: url(../img/icon-slack.png);
+}
+/* line 765, ../sass/main.scss */
+ul.list li.asana {
+  background-image: url(../img/icon-asana.png);
+}
+/* line 768, ../sass/main.scss */
+ul.list li.dropbox {
+  background-image: url(../img/icon-dropbox.png);
+}
+/* line 771, ../sass/main.scss */
+ul.list li.screenhero {
+  background-image: url(../img/icon-screenhero.png);
+}
+/* line 774, ../sass/main.scss */
+ul.list li.beanstalk {
+  background-image: url(../img/icon-beanstalk.png);
+}
+/* line 777, ../sass/main.scss */
+ul.list li.less {
+  background-image: url(../img/icon-less.png);
+}
+/* line 780, ../sass/main.scss */
+ul.list li.training {
+  background-image: none;
+  padding-left: 0;
+}
+/* line 785, ../sass/main.scss */
+ul.list li.sigma-1 .avatar {
+  background-image: url(../img/avatars/sigma-1.jpg);
+}
+/* line 790, ../sass/main.scss */
+ul.list li.sigma-3 .avatar {
+  background-image: url(../img/avatars/sigma-3.jpg);
+}
+/* line 795, ../sass/main.scss */
+ul.list li.sigma-6 .avatar {
+  background-image: url(../img/avatars/sigma-6.jpg);
+}
+/* line 800, ../sass/main.scss */
+ul.list li.ambassador .avatar {
+  background-image: url(../img/avatars/robert-bogue.jpg);
+}
+/* line 804, ../sass/main.scss */
+ul.list li .avatar {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  box-shadow: none;
+  border: 0;
+}
+/* line 814, ../sass/main.scss */
+ul.list li p {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+/* line 819, ../sass/main.scss */
+ul.list li p.name {
+  font-size: 16px;
+  font-weight: 700;
+}
+/* line 824, ../sass/main.scss */
+ul.list li p.description {
+  font-size: 12px;
+  color: #9b9b9b;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* line 833, ../sass/main.scss */
+.about {
+  padding-top: 24px;
+}
+/* line 838, ../sass/main.scss */
+.about .description p, .about .description h1, .about .description h2, .about .description h3, .about .description h4, .about .description h5 {
+  padding-right: 60px;
+}
+/* line 845, ../sass/main.scss */
+.about .funding h2 {
+  padding: 0 0 0 24px;
+}
+/* line 849, ../sass/main.scss */
+.about .funding ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+/* line 858, ../sass/main.scss */
+.about .funding ul.rounds li p {
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+/* line 864, ../sass/main.scss */
+.about .funding ul.rounds li p.round {
+  font-weight: 300;
+}
+/* line 868, ../sass/main.scss */
+.about .funding ul.rounds li p.amount {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+/* line 879, ../sass/main.scss */
+.about .funding ul.investors li {
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 8px;
+  padding-left: 48px;
+  background-repeat: no-repeat;
+  background-position: 24px center;
+}
+/* line 886, ../sass/main.scss */
+.about .funding ul.investors li:first-child {
+  border-top: 1px solid #dcdcdc;
+}
+/* line 890, ../sass/main.scss */
+.about .funding ul.investors li.y-combinator {
+  background-image: url(../img/icon-ycombinator.png);
+}
+/* line 893, ../sass/main.scss */
+.about .funding ul.investors li.felicis-ventures {
+  background-image: url(../img/icon-felicis-ventures.png);
+}
+/* line 896, ../sass/main.scss */
+.about .funding ul.investors li.union-square-ventures {
+  background-image: url(../img/icon-union-square-ventures.png);
+}
+/* line 900, ../sass/main.scss */
+.about .funding ul.investors li p {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+/* line 905, ../sass/main.scss */
+.about .funding ul.investors li p.name {
+  font-size: 16px;
+  font-weight: 700;
+}
+/* line 910, ../sass/main.scss */
+.about .funding ul.investors li p.description {
+  font-size: 12px;
+  color: #9b9b9b;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+/* line 918, ../sass/main.scss */
+.about .funding ul.investors li:last-child {
+  border-bottom: 0;
+}
+
+/* line 928, ../sass/main.scss */
+.social ul {
+  margin: 0 auto;
+  padding: 0 24px;
+}
+/* line 934, ../sass/main.scss */
+.social ul li a {
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-indent: -5000px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* line 944, ../sass/main.scss */
+.social ul li a:hover {
+  opacity: 1;
+}
+/* line 948, ../sass/main.scss */
+.social ul li a.linkedin {
+  background-image: url(../img/icon-linkedin.png);
+}
+/* line 951, ../sass/main.scss */
+.social ul li a.twitter {
+  background-image: url(../img/icon-twitter.png);
+}
+/* line 954, ../sass/main.scss */
+.social ul li a.spotify {
+  background-image: url(../img/icon-spotify.png);
+}
+/* line 957, ../sass/main.scss */
+.social ul li a.instagram {
+  background-image: url(../img/icon-instagram.png);
+}
+/* line 960, ../sass/main.scss */
+.social ul li a.facebook {
+  background-image: url(../img/icon-facebook.png);
+}
+/* line 963, ../sass/main.scss */
+.social ul li a.github {
+  background-image: url(../img/icon-github.png);
+}
+
+/* line 972, ../sass/main.scss */
+.events li {
+  background-position: 24px center;
+  background-image: url(../img/icon-event.png);
+  background-repeat: no-repeat;
+}
+/* line 977, ../sass/main.scss */
+.events li .date {
+  position: absolute;
+  width: 30px;
+  text-align: center;
+  top: 27px;
+  left: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+/* line 992, ../sass/main.scss */
+.community-involvement p {
+  padding: 0 24px 12px 24px;
+}
+
+/* line 996, ../sass/main.scss */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0.5;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-close.png);
+  cursor: pointer;
+}
+/* line 1009, ../sass/main.scss */
+.close:hover {
+  opacity: 1;
+}
+
+/* line 1015, ../sass/main.scss */
+.media ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* line 1020, ../sass/main.scss */
+.media ul li {
+  position: relative;
+}
+/* line 1024, ../sass/main.scss */
+.media ul li.pure-u-1-6 {
+  height: 120px;
+}
+/* line 1027, ../sass/main.scss */
+.media ul li.pure-u-1-2 {
+  height: 240px;
+}
+/* line 1031, ../sass/main.scss */
+.media ul li a {
+  position: relative;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #D8D8D8;
+  background-size: cover;
+  margin: 1px;
+  height: 99%;
+  padding: 0;
+}
+/* line 1042, ../sass/main.scss */
+.media ul li a.video {
+  background-image: url(../img/icon-placeholder-video.png);
+}
+/* line 1045, ../sass/main.scss */
+.media ul li a.music {
+  background-image: url(../img/icon-placeholder-music.png);
+}
+/* line 1048, ../sass/main.scss */
+.media ul li a.photo {
+  background-image: url(../img/icon-placeholder-photo.png);
+}
+/* line 1051, ../sass/main.scss */
+.media ul li a.team-1 {
+  background-image: url(../img/team/team-1.jpg);
+}
+/* line 1054, ../sass/main.scss */
+.media ul li a.team-2 {
+  background-image: url(../img/team/team-2.jpg);
+}
+/* line 1057, ../sass/main.scss */
+.media ul li a.team-3 {
+  background-image: url(../img/team/team-3.jpg);
+}
+/* line 1060, ../sass/main.scss */
+.media ul li a.team-4 {
+  background-image: url(../img/team/team-4.jpg);
+}
+/* line 1063, ../sass/main.scss */
+.media ul li a.team-5 {
+  background-image: url(../img/team/team-5.jpg);
+}
+/* line 1066, ../sass/main.scss */
+.media ul li a.team-6 {
+  background-image: url(../img/team/team-6.jpg);
+}
+/* line 1069, ../sass/main.scss */
+.media ul li a.team-7 {
+  background-image: url(../img/team/team-7.jpg);
+}
+/* line 1072, ../sass/main.scss */
+.media ul li a.team-8 {
+  background-image: url(../img/team/team-8.jpg);
+}
+/* line 1075, ../sass/main.scss */
+.media ul li a.team-9 {
+  background-image: url(../img/team/team-9.jpg);
+}
+/* line 1078, ../sass/main.scss */
+.media ul li a.team-10 {
+  background-image: url(../img/team/team-10.jpg);
+}
+/* line 1081, ../sass/main.scss */
+.media ul li a.team-11 {
+  background-image: url(../img/team/team-11.jpg);
+}
+/* line 1084, ../sass/main.scss */
+.media ul li a.team-12 {
+  background-image: url(../img/team/team-12.jpg);
+}
+/* line 1087, ../sass/main.scss */
+.media ul li a.workspace-1 {
+  background-image: url(../img/workspace-1.jpg);
+}
+/* line 1090, ../sass/main.scss */
+.media ul li a.workspace-2 {
+  background-image: url(../img/workspace-2.jpg);
+}
+/* line 1093, ../sass/main.scss */
+.media ul li a.workspace-3 {
+  background-image: url(../img/workspace-3.jpg);
+}
+/* line 1096, ../sass/main.scss */
+.media ul li a.workspace-4 {
+  background-image: url(../img/workspace-4.jpg);
+}
+
+/* line 1104, ../sass/main.scss */
+.footer {
+  height: 240px;
+  background-color: #fff;
+  border-top: 1px solid #dcdcdc;
+  margin-top: 48px;
+}
+/* line 1110, ../sass/main.scss */
+.footer h6 {
+  font-size: 12px;
+}
+/* line 1113, ../sass/main.scss */
+.footer ul {
+  padding: 0 24px 0 0;
+}
+/* line 1115, ../sass/main.scss */
+.footer ul li {
+  padding: 0;
+  margin: 0;
+}
+/* line 1119, ../sass/main.scss */
+.footer ul li p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+/* line 1125, ../sass/main.scss */
+.footer ul li a {
+  font-size: 12px;
+  font-family: "Roboto Slab", sans-serif;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 1141, ../sass/main.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 1149, ../sass/main.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 1160, ../sass/main.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 1169, ../sass/main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 1185, ../sass/main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 1199, ../sass/main.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 1215, ../sass/main.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 1217, ../sass/main.scss */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 1223, ../sass/main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 1251, ../sass/main.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 1258, ../sass/main.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 1263, ../sass/main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 1267, ../sass/main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 1275, ../sass/main.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 1281, ../sass/main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 1287, ../sass/main.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 1291, ../sass/main.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 1296, ../sass/main.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 1304, ../sass/main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 1311, ../sass/main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

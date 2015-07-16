@@ -1,0 +1,33 @@
+
+
+
+
+.anecdote {
+    padding: 80px 20px;
+    text-align: center;
+
+    p {
+        font-family: $roboto-slab;
+        font-size: 16px;
+    }
+}
+
+ul.management {
+    display: block;
+}
+ul.engineering {
+    display: none;
+}
+ul.product {
+    display: none;
+}
+.profile {
+    display: none;
+}
+
+.carrot-confidential {
+    width: 100%;
+    background-color: $dark-grey;
+    color: #fff;
+
+}
