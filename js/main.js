@@ -25,7 +25,7 @@ $(document).ready(function()  {
 		}
 	});
 
-	$('.people ul.team a').on('click', function() {
+	$('.people ul.team a .avatar').on('click', function() {
 		$('.profile').slideDown();
 		$('html, body').animate({
 	        scrollTop: $("#subnav").offset().top
@@ -40,26 +40,20 @@ $(document).ready(function()  {
 		$('.hero').toggleClass('map');
 	});
 
-	// function renderMap() {
- //        var mapElement = document.getElementById('map'),
- //        	lat = 39.749203,
- //        	lng = -104.99113;
+	$('.coffee').on('click', function() {
+		console.log('get a coffee');
+		$('#lightbox').fadeIn('fast');
+	});
 
-	// 	var	mapOptions = {
-	//             zoom: 				15,
-	//             center: 			new google.maps.LatLng(lat, lng),
-	//             mapTypeControl: 	false,
-	//             navigationControl: 	true,
-	//             zoomControl: 		true,
-	//             scrollwheel: 		false,
-	//             draggable: 			false,
-	//             streetViewControl: 	false,
-	//             mapTypeId: 			google.maps.MapTypeId.ROADMAP
-	//         };
- //        map = new google.maps.Map( mapElement, mapOptions );
- //        console.log('render map');
- //    }
-
- //    renderMap();
+	$('.modal .close, .modal .button.cancel').on('click', function() {
+		$('#lightbox').fadeOut('fast');
+	});
+	$('.modal .button.send').on('click', function() {
+		$('#lightbox').fadeOut('fast');
+		$('#growl').show();
+		setTimeout( function() {
+			$('#growl').fadeOut('fast');
+		}, 2500 );
+	});
 
 });
