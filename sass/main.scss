@@ -92,6 +92,7 @@ textarea {
 body {
     background-color: $background-grey;
     color: $dark-grey;
+    padding-left: 200px;
 }
 p {
     font-family: $roboto-slab;
@@ -110,6 +111,25 @@ hr {
     border-bottom: 1px solid #fff;
     margin: 48px 0;
 }
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: $roboto-condensed;
+    font-weight: $normal;
+    margin: 0;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+    color: $mid-grey;
+}
+h3 {
+    font-size: 16px;
+    color: $mid-grey;
+}
 .pure-g-r {
     padding: 0;
 }
@@ -122,23 +142,28 @@ hr {
     margin: 0;
 }
 .nav {
-    position: relative;
-    width: 100%;
+    position: fixed;
+    width: 200px;
     background-color: #fff;
-    height: 64px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-right: 1px solid $light-grey;
 
     .logo {
-        position: absolute;
+        position: relative;
         height: 64px;
-        width: 160px;
+        width: 100%;
         z-index: 2;
         display: block;
         top: 0;
         left: 0;
         background-image: url(../img/noun_carrot_56479.png);
-        background-position: left 20px center;
+        background-position: center center;
         background-repeat: no-repeat;
         text-decoration: none;
+        border-bottom: 1px solid $light-grey;
 
         span {
             margin-left: 64px;
@@ -149,1156 +174,86 @@ hr {
             font-size: 32px;
         }
     }
+
+    .self {
+        height: 100px;
+        text-align: center;
+        padding: 20px 0;
+
+        .avatar {
+            display: block;
+        }
+    }
     
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        right: 0;
-        position: absolute;
-        height: 100%;
-
-        li {
-            display: inline-block;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-
-            a {
-                display: block;
-                padding: 0 20px;
-                height: 100%;
-                font-size: 12px;
-                position: relative;
-                border-left: 1px solid $light-grey;
-                font-weight: $bold;
-                font-family: $roboto-sans;
-
-                span {
-                    line-height: 60px;
-                }
-
-                .avatar {
-                    float: right;
-                    background-image: url(../img/avatars/active-user.jpg);
-                    border-width: 1px;
-                    margin: 14px 0 0 10px;
-                }
-            }
-        }
-    }
-}
-.wrapper {
-    max-width: $max-width;
-    margin: 0 auto;
-    height: 100%;
-    position: relative;
-}
-body.company .hero {
-    background-image: url(../img/hero/craftsyOffice.jpg);
-
-    &.map {
-        background-image: url(../img/hero/craftsy-map.png);
-    }
-}
-body.team .hero {
-    background-image: url(../img/hero/craftsyTeam.jpg);
-}
-.hero {
-    position: relative;
-    width: 100%;
-    height: 340px;
-    border-bottom: 1px solid $light-grey;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    .stats {
-        position: absolute;
-        bottom: -1px;
-        right: 0;
-        width: 320px;
-        color: #fff;
-
-        ul {
-            padding: 0;
-            margin: 0;
-
-            p {
-                font-size: 32px;
-                font-weight: $normal;
-                margin: 0 0 -10px 0;
-                padding: 0 0 0 20px;
-            }
-            span {
-                font-size: 11px;
-                font-weight: $bold;
-                color: $mid-grey;
-                text-transform: uppercase;
-                margin: 0;
-                padding: 0 0 0 20px;
-            }
-
-            .row {
-                width: 100%;
-                
-                li {
-                    background-color: #000;
-                    margin-bottom: 1px;
-                    padding: 5px 0 7px 0;
-                }
-            }
-
-            .location:hover {
-                background-color: $orange;
-                cursor: pointer;
-            }
-        }
-    }
-
-    .company-details {
-        margin: 0;
-        padding: 48px 0 0 0;
-        list-style-type: none;
-
-        h1 {
-            font-family: $roboto-sans;
-            font-weight: $light;
-            font-size: 48px;
-            margin: 0;
-            color: #fff;
-            text-shadow: 1px 1px 4px rgba(100, 100, 100, 0.5);
-            padding-bottom: 10px;
-        }
-
-        p {
-            font-family: $roboto-sans;
-            font-weight: $light;
-            font-size: 16px;
-            margin: 0;
-            color: #fff;
-            max-width: 480px;
-            text-shadow: 1px 1px 4px rgba(100, 100, 100, 0.5);
-        }
-
-        a {
-            font-family: $roboto-sans;
-            font-weight: $bold;
-            font-size: 14px;
-            margin: 0;
-            color: $orange;
-            max-width: 480px;
-            cursor: pointer;
-            text-decoration: underline;
-            background-color: #fff;
-            padding: 10px;
-
-            &.follow {
-                color: #fff;
-                background-color: $orange;
-                border-radius: 4px;
-                text-decoration: none;
-            }
-        }
-    }
-}
-.subnav {
-    border-bottom: 1px solid $light-grey;
-    position: relative;
-    height: 100px;
-    background-color: #fff;
-    text-align: center;
-
-    ul {
-        margin: 0 auto;
-        padding: 0;
-        height: 100%;
         position: relative;
-
-        li {
-            height: 100%;
-            position: relative;
-
-            a {
-                display: block;
-                position: relative;
-                width: 100%;
-                height: 100%;
-                font-family: $roboto-condensed;
-                font-weight: $bold;
-                font-size: 16px;
-                text-transform: uppercase;
-                background-repeat: no-repeat;
-                background-position: center bottom;
-                cursor: pointer;
-                opacity: 0.5;
-
-                &.management {
-                    background-image: url(../img/icon-management.png);
-                }
-                &.engineering {
-                    background-image: url(../img/icon-engineering.png);
-                }
-                &.product {
-                    background-image: url(../img/icon-product.png);
-                }
-                &.people {
-                    background-image: url(../img/icon-people.png);
-                }
-                &.culture {
-                    background-image: url(../img/icon-culture.png);
-                }
-                &.work {
-                    background-image: url(../img/icon-work.png);
-                }
-                &.openings {
-                    background-image: url(../img/icon-openings.png);
-                }
-
-                .label {
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    bottom: 12px;
-                }
-
-                &.active {
-                    color: $orange;
-                    opacity: 1;
-                    background-position: center top;
-                }
-
-                &:hover {
-                    opacity: 1;
-                    
-                }
-            }
-        }
-
-        &.tab-3 {
-            width: 75%;
-        }
-        &.tab-4 {
-            width: 100%;
-        }
-    }
-}
-.profile {
-    display: none;
-    background-color: #fff;
-    border-bottom: 1px solid $light-grey;
-    border-right: 1px solid $light-grey;
-    margin-bottom: 24px;
-
-    .avatar {
-        width: 100px;
-        height: 100px;
-        background-image: url(../img/avatars/sigma-1.jpg);
-    }
-
-    .details {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .description {
-        padding: 16px 20px 0 20px;
-    }
-}
-.buttons {
-    margin-bottom: 36px;
-}
-.button {
-    padding: 16px 24px;
-    border-radius: 4px;
-    margin-right: 12px;
-    font-size: 14px;
-    border-width: 0;
-    border-style: none;
-
-    &.primary {
-        text-decoration: none;
-        background-color: $orange;
-        color: #fff;
-    }
-    &.secondary {
-        text-decoration: none;
-        border-color: $mid-grey;
-        border-width: 1px;
-        border-style: solid;
-        clear: right;
-
-        span {
-            color: $mid-grey;
-            text-decoration: none;
-        }
-        
-    }
-}
-.content, .title-bar {
-    padding-top: 24px;
-
-    a {
-        color: $orange;
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
-    .description {
-        padding-right: 48px;
-    }
-    h2 {
-        font-family: $roboto-condensed;
-        font-weight: $light;
-        font-size: 36px;
-        margin: 0 0 24px 0;
-    }
-    h3 {
-        font-family: $roboto-slab;
-        font-weight: $light;
-        font-size: 20px;
-        margin: 0 0 24px 0;
-    }
-
-    &.culture, &.work, &.openings {
-        display: none;
-    }
-}
-.title-bar {
-    text-align: center;
-
-    p {
-        font-family: $roboto-condensed;
-        font-weight: $light;
-        font-size: 16px;
-        padding: 0 120px;
-    }
-}
-.ambassador {
-
-    &.panel {
-        padding-top: 0;
-    }
-    h2 {
-        background-color: $orange;
-        color: #fff;
-        margin: 0;
-        padding: 20px 0;
-    }
-}
-.avatar {
-    border-radius: 50%;
-    background-color: #fff;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 5px solid #fff;
-    box-shadow: 2px 2px 5px $light-grey;
-    margin: 0 auto;
-    position: relative;
-
-    &.large {
-        width: 136px;
-        height: 136px;
-    }
-    &.medium {
-        width: 96px;
-        height: 96px;
-    }
-    &.small {
-        width: 48px;
-        height: 48px;
-    }
-    &.tiny {
-        width: 32px;
-        height: 32px;
-    }
-    &.josh-scott {
-        background-image: url(../img/avatars/josh-scott.jpg);
-    }
-    &.john-levisay {
-        background-image: url(../img/avatars/john-levisay.jpg);
-    }
-    &.todd-tobin {
-        background-image: url(../img/avatars/todd-tobin.jpg);
-    }
-    &.bret-hanna {
-        background-image: url(../img/avatars/bret-hanna.jpg);
-    }
-
-    &.sigma-1 {
-        background-image: url(../img/avatars/sigma-1.jpg);
-    }
-    &.sigma-2 {
-         background-image: url(../img/avatars/sigma-2.jpg);
-    }
-    &.sigma-3 {
-         background-image: url(../img/avatars/sigma-3.jpg);
-    }
-    &.sigma-4 {
-         background-image: url(../img/avatars/sigma-4.jpg);
-    }
-    &.sigma-5 {
-         background-image: url(../img/avatars/sigma-5.jpg);
-    }
-    &.sigma-6 {
-         background-image: url(../img/avatars/sigma-6.jpg);
-    }
-    &.sigma-7 {
-         background-image: url(../img/avatars/sigma-7.jpg);
-    }
-    &.sigma-8 {
-         background-image: url(../img/avatars/sigma-8.jpg);
-    }
-    &.sigma-9 {
-         background-image: url(../img/avatars/sigma-9.jpg);
-    }
-    &.front-end {
-        background-image: url(../img/avatars/front-end.png);
-    }
-    &.ruby {
-         background-image: url(../img/avatars/ruby.png);
-    }
-    &.sys-ops {
-         background-image: url(../img/avatars/sys-ops.png);
-    }
-    &.ux {
-         background-image: url(../img/avatars/ux.png);
-    }
-    &.android {
-         background-image: url(../img/avatars/android.png);
-    }
-    &.ios {
-         background-image: url(../img/avatars/ios.png);
-    }
-    &.big-data {
-         background-image: url(../img/avatars/big-data.png);
-    }
-    &.active-user {
-        background-image: url(../img/avatars/active-user.jpg);
-    }
-    &.scrum {
-        background-image: url(../img/icon-scrum.png);
-    }
-    &.web {
-        background-image: url(../img/icon-web.png);
-    }
-    &.ecommerce {
-        background-image: url(../img/icon-ecommerce.png);
-    }
-    &.architects {
-        background-image: url(../img/icon-architects.png);
-    }
-    &.product-managers {
-        background-image: url(../img/icon-product-managers.png);
-    }
-    &.engineering-managers {
-        background-image: url(../img/icon-engineering-managers.png);
-    }
-
-    .coffee {
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        border: 2px solid #fff;
-        position: absolute;
-        display: block;
-        top: -15px;
-        right: -15px;
-        background-color: $orange;
-        background-position: 11px center;
-        background-repeat: no-repeat;
-        background-image: url(../img/icon-coffee.png);
-        cursor: pointer;
-    }
-
-    .openings {
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        border: 2px solid #fff;
-        position: absolute;
-        display: block;
-        top: -15px;
-        right: -15px;
-        background-color: $orange;
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        background-image: url(../img/icon-briefcase.png);
-        cursor: pointer;
-        line-height: 44px;
-        font-weight: bold;
-        color: $orange;
-        font-size: 12px;
-    }
-}
-ul.methodologies {
-
-    li {
-
-         a {
-            height: 60px;
-            background-repeat: no-repeat;
-            background-position: center 28px;
-            padding-top: 100px !important;
-
-            &.kanban {
-                background-image: url(../img/icon-kanban.png);
-            }
-            &.release {
-                background-image: url(../img/icon-release-frequency.png);
-            }
-            &.sprint {
-                background-image: url(../img/icon-sprint.png);
-            }
-            &.jasmine {
-                background-image: url(../img/icon-jasmine.png);
-            }
-            &.meetings {
-                background-image: url(../img/icon-meetings.png);
-            }
-            &.jira {
-                background-image: url(../img/icon-jira.png);
-            }
-            h3 {
-               font-size: 18px; 
-            }
-            
-        }
-    }
-
-   
-}
-.panel {
-    background-color: #fff;
-    margin-bottom: 24px;
-    padding-top: 24px;
-    border: 1px solid $light-grey;
-    position: relative;
-
-    h2 {
-        font-size: 24px;
-        padding-left: 24px;
-    }
-
-    .icon-info {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 20px;
-        height: 20px;
-        background-image: url(../img/icon-info.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-}
-.pure-u-1-4 .avatar, .pure-u-1-3 .avatar {
-    width: 96px;
-    height: 96px;
-}
-.pure-u-1-2 .avatar {
-    width: 136px;
-    height: 136px;
-}
-ul.grid {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: $roboto-condensed;
-    text-transform: capitalize;
-
-    &.team {
-        li {
-            a {
-                min-height: 195px;
-            }
-        }
-    }
-    li {
-        text-align: center;
-
-        a {
-            text-decoration: none;
-            color: $dark-grey;
-            display: block;
-            padding: 40px 0;
-        }
-        p {
-            padding: 0 24px;
-            text-transform: none;
-
-            em {
-                color: $dark-grey;
-            }
-        }
-
-        h3 {
-            font-weight: $normal;
-            font-size: 24px;
-            margin: 8px 0 0 0;
-        }
-        h4 {
-            font-weight: $bold;
-            font-size: 11px;
-            text-transform: uppercase;
-            color: $mid-grey;
-            margin: -4px 0 0 0;
-        }
-    }
-
-    &.borders {
-        border-left: 1px solid $light-grey;
+        height: 100%;
         border-top: 1px solid $light-grey;
 
         li {
-
-            a {
-                border-bottom: 1px solid $light-grey;
-                border-right: 1px solid $light-grey;
-            }
-        }
-    }  
-}
-ul.list {
-    margin: 0;
-    padding: 0;   
-
-    li {
-        border-bottom: 1px solid $light-grey;
-        padding-top: 8px;
-        padding-left: 48px;
-        background-repeat: no-repeat;
-        background-position: 24px center;
-        min-height: 40px;
-        position: relative;
-
-        &:first-child {
-            border-top: 1px solid $light-grey;
-        } 
-
-        &.y-combinator {
-            background-image: url(../img/icon-ycombinator.png);
-        }
-        &.felicis-ventures {
-            background-image: url(../img/icon-felicis-ventures.png);
-        }
-        &.union-square-ventures {
-            background-image: url(../img/icon-union-square-ventures.png);
-        }
-        &.ruby-on-rails {
-            background-image: url(../img/icon-ruby-on-rails.png);
-        }
-        &.google-apps {
-            background-image: url(../img/icon-google-apps.png);
-        }
-        &.python {
-            background-image: url(../img/icon-python.png);
-        }
-        &.django {
-            background-image: url(../img/icon-django.png);
-        }
-        &.html5 {
-            background-image: url(../img/icon-html5.png);
-        }
-        &.bootstrap {
-            background-image: url(../img/icon-bootstrap.png);
-        }
-        &.github {
-            background-image: url(../img/icon-github-2.png);
-        }
-        &.mongo {
-            background-image: url(../img/icon-mongo.png);
-        }
-        &.ember {
-            background-image: url(../img/icon-ember.png);
-        }
-        &.slack {
-            background-image: url(../img/icon-slack.png);
-        }
-        &.asana {
-            background-image: url(../img/icon-asana.png);
-        }
-        &.dropbox {
-            background-image: url(../img/icon-dropbox.png);
-        }
-        &.screenhero {
-            background-image: url(../img/icon-screenhero.png);
-        }
-        &.beanstalk {
-            background-image: url(../img/icon-beanstalk.png);
-        }
-        &.less {
-            background-image: url(../img/icon-less.png);
-        }
-        &.training {
-            background-image: none;
-            padding-left: 0;
-        }
-        &.sigma-1 {
-            .avatar {
-                background-image: url(../img/avatars/sigma-1.jpg);
-            }
-        }
-        &.sigma-3 {
-            .avatar {
-                background-image: url(../img/avatars/sigma-3.jpg);
-            }
-        }
-        &.sigma-6 {
-            .avatar {
-                background-image: url(../img/avatars/sigma-6.jpg);
-            }
-        }
-        &.ambassador {
-            .avatar {
-                background-image: url(../img/avatars/robert-bogue.jpg);
-            }
-        }
-        .avatar {
-            width: 36px;
-            height: 36px;
-            position: absolute;
-            top: 10px;
-            left: 16px;
-            box-shadow: none;
-            border: 0;
-        }
-
-        p {
-            font-family: $roboto-condensed;
-            margin: 0;
-            padding: 0 0 0 24px;
-            
-            &.name {
-                font-size: 16px;
-                font-weight: $bold;
-            }
-
-            &.description {
-                font-size: 12px;
-                color: $mid-grey;
-                font-weight: $bold;
-                margin-bottom: 16px;
-            } 
-        }
-    }
-}
-.about {
-    padding-top: 24px;
-
-    .description {
-        
-        p, h1, h2, h3, h4, h5 {
-            padding-right: 60px;
-        }
-    }
-
-    .funding {
-        
-        h2 {
-            padding: 0 0 0 24px;
-        }
-
-        ul {
-            margin: 0;
-            list-style-type: none;
-            padding: 0;
-
-            &.rounds {
-                
-                li {
-                   
-                    p {
-                        font-size: 16px;
-                        font-family: $roboto-condensed;
-                        margin: 0;
-                        padding: 0 0 0 24px;
-                        
-                        &.round {
-                            font-weight: $light;
-                        }
-
-                        &.amount {
-                            font-weight: $bold;
-                            margin-bottom: 16px;
-                        } 
-                    }
-                    
-                }
-            }
-
-            &.investors {
-                
-                li {
-                    border-bottom: 1px solid $light-grey;
-                    padding-top: 8px;
-                    padding-left: 48px;
-                    background-repeat: no-repeat;
-                    background-position: 24px center;
-
-                    &:first-child {
-                        border-top: 1px solid $light-grey;
-                    } 
-
-                    &.y-combinator {
-                        background-image: url(../img/icon-ycombinator.png);
-                    }
-                    &.felicis-ventures {
-                        background-image: url(../img/icon-felicis-ventures.png);
-                    }
-                    &.union-square-ventures {
-                        background-image: url(../img/icon-union-square-ventures.png);
-                    }
-
-                    p {
-                        font-family: $roboto-condensed;
-                        margin: 0;
-                        padding: 0 0 0 24px;
-                        
-                        &.name {
-                            font-size: 16px;
-                            font-weight: $bold;
-                        }
-
-                        &.description {
-                            font-size: 12px;
-                            color: $mid-grey;
-                            font-weight: $bold;
-                            margin-bottom: 16px;
-                        } 
-                    }
-
-                    &:last-child {
-                        border-bottom: 0;
-                    }
-                }
-            }
-        }
-    }
-}
-.social {
-
-    ul {
-        margin: 0 auto;
-        padding: 0 24px;
-
-        li {
-            
-            a {
-                display: block;
-                background-position: center center;
-                background-repeat: no-repeat;
-                text-indent: -5000px;
-                width: 100%;
-                height: 100%;
-                opacity: 0.5;
-                cursor: pointer;
-
-                &:hover {
-                    opacity: 1;
-                }
-
-                &.linkedin {
-                    background-image: url(../img/icon-linkedin.png);
-                }
-                &.twitter {
-                    background-image: url(../img/icon-twitter.png);
-                }
-                &.spotify {
-                    background-image: url(../img/icon-spotify.png);
-                }
-                &.instagram {
-                    background-image: url(../img/icon-instagram.png);
-                }
-                &.facebook {
-                    background-image: url(../img/icon-facebook.png);
-                }
-                &.github {
-                    background-image: url(../img/icon-github.png);
-                }
-            }
-        }
-    }
-}
-.connect {
-
-    ul {
-        margin: 0;
-        padding: 0;
-
-        li {
-            
-            a {
-                background-color: $orange;
-                color: #fff;
-                max-height: 30px;
-                padding: 10px;
-                margin: 0 10px;
-                text-align: center;
-                background-repeat: no-repeat;
-                background-position: 10px center;
-
-                &.coffee {
-                    background-image: url(../img/icon-coffee.png);
-                }
-                &.follow {
-                    background-image: url(../img/icon-follow.png);
-                }
-            }
-        }
-    }
-}
-.events {
-
-    li {
-        background-position: 24px center;
-        background-image: url(../img/icon-event.png);
-        background-repeat: no-repeat;
-
-        .date {
-            position: absolute;
-            width: 30px;
-            text-align: center;
-            top: 27px;
-            left: 24px;
-            font-family: $roboto-sans;
-            font-size: 12px;
-            font-weight: $bold;
-            color: $dark-grey;
-        }
-    }
-}
-.community-involvement {
-
-    p {
-        padding: 0 24px 12px 24px;
-    }
-}
-.close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    opacity: 0.5;
-    background-position: center center;
-    width: 20px;
-    height: 20px;
-    display: block;
-    background-repeat: no-repeat;
-    background-image: url(../img/icon-close.png);
-    cursor: pointer;
-    z-index: 1005;
-
-    &:hover {
-        opacity: 1;
-    }
-}
-.media {
-
-    ul {
-        margin: 0;
-        padding: 0;
-        position: relative;
-
-        li {
-
             position: relative;
-
-            &.pure-u-1-6 {
-                height: 120px;
-            }
-            &.pure-u-1-2 {
-                height: 240px;
-            }
-
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid $light-grey;
+                
             a {
                 position: relative;
-                display: block;
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-color: #D8D8D8;
-                background-size: cover;
-                margin: 1px;
-                height: 99%;
-                padding: 0;
-
-                &.video {
-                    background-image: url(../img/icon-placeholder-video.png);
-                }
-                &.music {
-                    background-image: url(../img/icon-placeholder-music.png);
-                }
-                &.photo {
-                    background-image: url(../img/icon-placeholder-photo.png);
-                }
-                &.team-1 {
-                    background-image: url(../img/team/team-1.jpg);
-                }
-                &.team-2 {
-                    background-image: url(../img/team/team-2.jpg);
-                }
-                &.team-3 {
-                    background-image: url(../img/team/team-3.jpg);
-                }
-                &.team-4{
-                    background-image: url(../img/team/team-4.jpg);
-                }
-                &.team-5 {
-                    background-image: url(../img/team/team-5.jpg);
-                }
-                &.team-6 {
-                    background-image: url(../img/team/team-6.jpg);
-                }
-                &.team-7 {
-                    background-image: url(../img/team/team-7.jpg);
-                }
-                &.team-8 {
-                    background-image: url(../img/team/team-8.jpg);
-                }
-                &.team-9 {
-                    background-image: url(../img/team/team-9.jpg);
-                }
-                &.team-10 {
-                    background-image: url(../img/team/team-10.jpg);
-                }
-                &.team-11 {
-                    background-image: url(../img/team/team-11.jpg);
-                }
-                &.team-12 {
-                    background-image: url(../img/team/team-12.jpg);
-                }
-                &.workspace-1 {
-                    background-image: url(../img/workspace-1.jpg);
-                }
-                &.workspace-2 {
-                    background-image: url(../img/workspace-2.jpg);
-                }
-                &.workspace-3 {
-                    background-image: url(../img/workspace-3.jpg);
-                }
-                &.workspace-4 {
-                    background-image: url(../img/workspace-4.jpg);
-                }
-            }
-        }
-    }
-}
-
-.footer {
-    height: 240px;
-    background-color: #fff;
-    border-top: 1px solid $light-grey;
-    margin-top: 48px;
-
-    h6 {
-        font-size: 12px;
-    }
-    ul {
-        padding: 0 24px 0 0;
-        li {
-            padding: 0;
-            margin: 0;
-
-            p {
-                font-size: 12px;
-                padding: 0;
-                margin: 0;
-            }
-            
-            a {
-                font-size: 12px;
-                font-family: $roboto-slab;
-                text-decoration: underline;
-            }
-        }
-    }
-}
-
-.anecdote {
-    padding: 80px 20px;
-    text-align: center;
-
-    p {
-        font-family: $roboto-slab;
-        font-size: 16px;
-    }
-}
-
-ul.management {
-    display: none;
-}
-ul.engineering {
-    display: block;
-}
-ul.product {
-    display: none;
-}
-.profile {
-    display: none;
-}
-
-.carrot-confidential {
-    width: 100%;
-    background-color: $dark-grey;
-    color: #fff;
-
-}
-
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 1001;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    .background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #000;
-        opacity: 0.7;
-        z-index: 1002;
-    }
-
-    .modal {
-        position: absolute;
-        top: 100px;
-        left: 50%;
-        margin-left: -240px;
-        width: 480px;
-        height: 360px;
-        background-color: #efefef;
-        border: 5px solid #fff;
-        z-index: 1003;
-
-        .message {
-            padding: 20px;
-            position: relative;
-
-            h1 {
+                font-weight: $light;
                 font-family: $roboto-condensed;
-            }
+                color: $dark-grey;
 
-            textarea {
-                width: 100%;
-                height: 160px;
-                border-color: $light-grey;
-                margin-bottom: 30px;
-            }
-
-            a {
-                cursor: pointer;
+                span {
+                    display: block;
+                    height: 40px;
+                    font-size: 16px;
+                    line-height: 40px;
+                    padding-left: 20px;
+                }
             }
         }
-        
+    }
+}
+.slate {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid $light-grey;
+    padding: 20px;
+    margin: 0;
+}
+.tile {
+    background-color: #fff;
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+.avatar {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 2px 2px 4px $light-grey;
+    background-image: url(../img/avatars/ryan-jones.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+
+    &.avatar-100 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+
+    &.avatar-70 {
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
     }
 }
 .growl {

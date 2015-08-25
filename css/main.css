@@ -399,9 +399,10 @@ textarea {
 body {
   background-color: #f0f0f0;
   color: #4a4a4a;
+  padding-left: 200px;
 }
 
-/* line 96, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 p {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
@@ -410,59 +411,93 @@ p {
   padding: 0 0 8px 0;
 }
 
-/* line 103, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* line 108, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 hr {
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #fff;
   margin: 48px 0;
 }
 
-/* line 113, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
+h1, h2, h3, h4, h5, h6, h7 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* line 119, ../sass/main.scss */
+h1 {
+  font-size: 36px;
+}
+
+/* line 122, ../sass/main.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 125, ../sass/main.scss */
+h3 {
+  font-size: 18px;
+  color: #9b9b9b;
+}
+
+/* line 129, ../sass/main.scss */
+h3 {
+  font-size: 16px;
+  color: #9b9b9b;
+}
+
+/* line 133, ../sass/main.scss */
 .pure-g-r {
   padding: 0;
 }
 
-/* line 116, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 .map {
   min-height: 280px;
 }
 
-/* line 119, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 .address {
   min-height: 280px;
   background-color: #fff;
   margin: 0;
 }
 
-/* line 124, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 .nav {
-  position: relative;
-  width: 100%;
+  position: fixed;
+  width: 200px;
   background-color: #fff;
-  height: 64px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-right: 1px solid #dcdcdc;
 }
-/* line 130, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 .nav .logo {
-  position: absolute;
+  position: relative;
   height: 64px;
-  width: 160px;
+  width: 100%;
   z-index: 2;
   display: block;
   top: 0;
   left: 0;
   background-image: url(../img/noun_carrot_56479.png);
-  background-position: left 20px center;
+  background-position: center center;
   background-repeat: no-repeat;
   text-decoration: none;
+  border-bottom: 1px solid #dcdcdc;
 }
-/* line 143, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 .nav .logo span {
   margin-left: 64px;
   font-family: "Roboto Condensed", sans-serif;
@@ -471,1253 +506,95 @@ hr {
   line-height: 64px;
   font-size: 32px;
 }
-/* line 153, ../sass/main.scss */
+/* line 178, ../sass/main.scss */
+.nav .self {
+  height: 100px;
+  text-align: center;
+  padding: 20px 0;
+}
+/* line 183, ../sass/main.scss */
+.nav .self .avatar {
+  display: block;
+}
+/* line 188, ../sass/main.scss */
 .nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  right: 0;
-  position: absolute;
+  position: relative;
   height: 100%;
+  border-top: 1px solid #dcdcdc;
 }
-/* line 161, ../sass/main.scss */
+/* line 196, ../sass/main.scss */
 .nav ul li {
-  display: inline-block;
-  height: 100%;
+  position: relative;
   margin: 0;
   padding: 0;
+  border-bottom: 1px solid #dcdcdc;
 }
-/* line 167, ../sass/main.scss */
+/* line 202, ../sass/main.scss */
 .nav ul li a {
-  display: block;
-  padding: 0 20px;
-  height: 100%;
-  font-size: 12px;
   position: relative;
-  border-left: 1px solid #dcdcdc;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #4a4a4a;
 }
-/* line 177, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 .nav ul li a span {
-  line-height: 60px;
-}
-/* line 181, ../sass/main.scss */
-.nav ul li a .avatar {
-  float: right;
-  background-image: url(../img/avatars/active-user.jpg);
-  border-width: 1px;
-  margin: 14px 0 0 10px;
+  display: block;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  padding-left: 20px;
 }
 
-/* line 191, ../sass/main.scss */
-.wrapper {
+/* line 219, ../sass/main.scss */
+.slate {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 20px;
+  margin: 0;
+}
+
+/* line 228, ../sass/main.scss */
+.tile {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
   max-width: 960px;
   margin: 0 auto;
-  height: 100%;
-  position: relative;
 }
 
-/* line 197, ../sass/main.scss */
-body.company .hero {
-  background-image: url(../img/hero/craftsyOffice.jpg);
-}
-/* line 200, ../sass/main.scss */
-body.company .hero.map {
-  background-image: url(../img/hero/craftsy-map.png);
-}
-
-/* line 204, ../sass/main.scss */
-body.team .hero {
-  background-image: url(../img/hero/craftsyTeam.jpg);
-}
-
-/* line 207, ../sass/main.scss */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 340px;
-  border-bottom: 1px solid #dcdcdc;
+/* line 235, ../sass/main.scss */
+.avatar {
+  border-width: 3px;
+  border-style: solid;
+  border-color: #fff;
+  box-shadow: 2px 2px 4px #dcdcdc;
+  background-image: url(../img/avatars/ryan-jones.png);
   background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-}
-/* line 216, ../sass/main.scss */
-.hero .stats {
-  position: absolute;
-  bottom: -1px;
-  right: 0;
-  width: 320px;
-  color: #fff;
-}
-/* line 223, ../sass/main.scss */
-.hero .stats ul {
-  padding: 0;
-  margin: 0;
-}
-/* line 227, ../sass/main.scss */
-.hero .stats ul p {
-  font-size: 32px;
-  font-weight: 400;
-  margin: 0 0 -10px 0;
-  padding: 0 0 0 20px;
-}
-/* line 233, ../sass/main.scss */
-.hero .stats ul span {
-  font-size: 11px;
-  font-weight: 700;
-  color: #9b9b9b;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0 0 0 20px;
-}
-/* line 242, ../sass/main.scss */
-.hero .stats ul .row {
-  width: 100%;
-}
-/* line 245, ../sass/main.scss */
-.hero .stats ul .row li {
-  background-color: #000;
-  margin-bottom: 1px;
-  padding: 5px 0 7px 0;
-}
-/* line 252, ../sass/main.scss */
-.hero .stats ul .location:hover {
-  background-color: #F5A623;
-  cursor: pointer;
-}
-/* line 259, ../sass/main.scss */
-.hero .company-details {
-  margin: 0;
-  padding: 48px 0 0 0;
-  list-style-type: none;
-}
-/* line 264, ../sass/main.scss */
-.hero .company-details h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 48px;
-  margin: 0;
-  color: #fff;
-  text-shadow: 1px 1px 4px rgba(100, 100, 100, 0.5);
-  padding-bottom: 10px;
-}
-/* line 274, ../sass/main.scss */
-.hero .company-details p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  margin: 0;
-  color: #fff;
-  max-width: 480px;
-  text-shadow: 1px 1px 4px rgba(100, 100, 100, 0.5);
-}
-/* line 284, ../sass/main.scss */
-.hero .company-details a {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  margin: 0;
-  color: #F5A623;
-  max-width: 480px;
-  cursor: pointer;
-  text-decoration: underline;
-  background-color: #fff;
-  padding: 10px;
-}
-/* line 296, ../sass/main.scss */
-.hero .company-details a.follow {
-  color: #fff;
-  background-color: #F5A623;
-  border-radius: 4px;
-  text-decoration: none;
-}
-
-/* line 305, ../sass/main.scss */
-.subnav {
-  border-bottom: 1px solid #dcdcdc;
-  position: relative;
-  height: 100px;
-  background-color: #fff;
-  text-align: center;
-}
-/* line 312, ../sass/main.scss */
-.subnav ul {
   margin: 0 auto;
-  padding: 0;
-  height: 100%;
   position: relative;
 }
-/* line 318, ../sass/main.scss */
-.subnav ul li {
-  height: 100%;
-  position: relative;
-}
-/* line 322, ../sass/main.scss */
-.subnav ul li a {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  text-transform: uppercase;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  cursor: pointer;
-  opacity: 0.5;
-}
-/* line 336, ../sass/main.scss */
-.subnav ul li a.management {
-  background-image: url(../img/icon-management.png);
-}
-/* line 339, ../sass/main.scss */
-.subnav ul li a.engineering {
-  background-image: url(../img/icon-engineering.png);
-}
-/* line 342, ../sass/main.scss */
-.subnav ul li a.product {
-  background-image: url(../img/icon-product.png);
-}
-/* line 345, ../sass/main.scss */
-.subnav ul li a.people {
-  background-image: url(../img/icon-people.png);
-}
-/* line 348, ../sass/main.scss */
-.subnav ul li a.culture {
-  background-image: url(../img/icon-culture.png);
-}
-/* line 351, ../sass/main.scss */
-.subnav ul li a.work {
-  background-image: url(../img/icon-work.png);
-}
-/* line 354, ../sass/main.scss */
-.subnav ul li a.openings {
-  background-image: url(../img/icon-openings.png);
-}
-/* line 358, ../sass/main.scss */
-.subnav ul li a .label {
-  display: block;
-  position: absolute;
-  width: 100%;
-  bottom: 12px;
-}
-/* line 365, ../sass/main.scss */
-.subnav ul li a.active {
-  color: #F5A623;
-  opacity: 1;
-  background-position: center top;
-}
-/* line 371, ../sass/main.scss */
-.subnav ul li a:hover {
-  opacity: 1;
-}
-/* line 378, ../sass/main.scss */
-.subnav ul.tab-3 {
-  width: 75%;
-}
-/* line 381, ../sass/main.scss */
-.subnav ul.tab-4 {
-  width: 100%;
-}
-
-/* line 386, ../sass/main.scss */
-.profile {
-  display: none;
-  background-color: #fff;
-  border-bottom: 1px solid #dcdcdc;
-  border-right: 1px solid #dcdcdc;
-  margin-bottom: 24px;
-}
-/* line 393, ../sass/main.scss */
-.profile .avatar {
+/* line 247, ../sass/main.scss */
+.avatar.avatar-100 {
   width: 100px;
   height: 100px;
-  background-image: url(../img/avatars/sigma-1.jpg);
+  border-radius: 50px;
 }
-/* line 399, ../sass/main.scss */
-.profile .details {
-  padding: 20px;
-  text-align: center;
-}
-/* line 404, ../sass/main.scss */
-.profile .description {
-  padding: 16px 20px 0 20px;
+/* line 253, ../sass/main.scss */
+.avatar.avatar-70 {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
 }
 
-/* line 408, ../sass/main.scss */
-.buttons {
-  margin-bottom: 36px;
-}
-
-/* line 411, ../sass/main.scss */
-.button {
-  padding: 16px 24px;
-  border-radius: 4px;
-  margin-right: 12px;
-  font-size: 14px;
-  border-width: 0;
-  border-style: none;
-}
-/* line 419, ../sass/main.scss */
-.button.primary {
-  text-decoration: none;
-  background-color: #F5A623;
-  color: #fff;
-}
-/* line 424, ../sass/main.scss */
-.button.secondary {
-  text-decoration: none;
-  border-color: #9b9b9b;
-  border-width: 1px;
-  border-style: solid;
-  clear: right;
-}
-/* line 431, ../sass/main.scss */
-.button.secondary span {
-  color: #9b9b9b;
-  text-decoration: none;
-}
-
-/* line 438, ../sass/main.scss */
-.content, .title-bar {
-  padding-top: 24px;
-}
-/* line 441, ../sass/main.scss */
-.content a, .title-bar a {
-  color: #F5A623;
-  text-decoration: underline;
-  cursor: pointer;
-}
-/* line 447, ../sass/main.scss */
-.content .description, .title-bar .description {
-  padding-right: 48px;
-}
-/* line 450, ../sass/main.scss */
-.content h2, .title-bar h2 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 300;
-  font-size: 36px;
-  margin: 0 0 24px 0;
-}
-/* line 456, ../sass/main.scss */
-.content h3, .title-bar h3 {
-  font-family: "Roboto Slab", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  margin: 0 0 24px 0;
-}
-/* line 463, ../sass/main.scss */
-.content.culture, .content.work, .content.openings, .title-bar.culture, .title-bar.work, .title-bar.openings {
-  display: none;
-}
-
-/* line 467, ../sass/main.scss */
-.title-bar {
-  text-align: center;
-}
-/* line 470, ../sass/main.scss */
-.title-bar p {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  padding: 0 120px;
-}
-
-/* line 479, ../sass/main.scss */
-.ambassador.panel {
-  padding-top: 0;
-}
-/* line 482, ../sass/main.scss */
-.ambassador h2 {
-  background-color: #F5A623;
-  color: #fff;
-  margin: 0;
-  padding: 20px 0;
-}
-
-/* line 489, ../sass/main.scss */
-.avatar {
-  border-radius: 50%;
-  background-color: #fff;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 5px solid #fff;
-  box-shadow: 2px 2px 5px #dcdcdc;
-  margin: 0 auto;
-  position: relative;
-}
-/* line 500, ../sass/main.scss */
-.avatar.large {
-  width: 136px;
-  height: 136px;
-}
-/* line 504, ../sass/main.scss */
-.avatar.medium {
-  width: 96px;
-  height: 96px;
-}
-/* line 508, ../sass/main.scss */
-.avatar.small {
-  width: 48px;
-  height: 48px;
-}
-/* line 512, ../sass/main.scss */
-.avatar.tiny {
-  width: 32px;
-  height: 32px;
-}
-/* line 516, ../sass/main.scss */
-.avatar.josh-scott {
-  background-image: url(../img/avatars/josh-scott.jpg);
-}
-/* line 519, ../sass/main.scss */
-.avatar.john-levisay {
-  background-image: url(../img/avatars/john-levisay.jpg);
-}
-/* line 522, ../sass/main.scss */
-.avatar.todd-tobin {
-  background-image: url(../img/avatars/todd-tobin.jpg);
-}
-/* line 525, ../sass/main.scss */
-.avatar.bret-hanna {
-  background-image: url(../img/avatars/bret-hanna.jpg);
-}
-/* line 529, ../sass/main.scss */
-.avatar.sigma-1 {
-  background-image: url(../img/avatars/sigma-1.jpg);
-}
-/* line 532, ../sass/main.scss */
-.avatar.sigma-2 {
-  background-image: url(../img/avatars/sigma-2.jpg);
-}
-/* line 535, ../sass/main.scss */
-.avatar.sigma-3 {
-  background-image: url(../img/avatars/sigma-3.jpg);
-}
-/* line 538, ../sass/main.scss */
-.avatar.sigma-4 {
-  background-image: url(../img/avatars/sigma-4.jpg);
-}
-/* line 541, ../sass/main.scss */
-.avatar.sigma-5 {
-  background-image: url(../img/avatars/sigma-5.jpg);
-}
-/* line 544, ../sass/main.scss */
-.avatar.sigma-6 {
-  background-image: url(../img/avatars/sigma-6.jpg);
-}
-/* line 547, ../sass/main.scss */
-.avatar.sigma-7 {
-  background-image: url(../img/avatars/sigma-7.jpg);
-}
-/* line 550, ../sass/main.scss */
-.avatar.sigma-8 {
-  background-image: url(../img/avatars/sigma-8.jpg);
-}
-/* line 553, ../sass/main.scss */
-.avatar.sigma-9 {
-  background-image: url(../img/avatars/sigma-9.jpg);
-}
-/* line 556, ../sass/main.scss */
-.avatar.front-end {
-  background-image: url(../img/avatars/front-end.png);
-}
-/* line 559, ../sass/main.scss */
-.avatar.ruby {
-  background-image: url(../img/avatars/ruby.png);
-}
-/* line 562, ../sass/main.scss */
-.avatar.sys-ops {
-  background-image: url(../img/avatars/sys-ops.png);
-}
-/* line 565, ../sass/main.scss */
-.avatar.ux {
-  background-image: url(../img/avatars/ux.png);
-}
-/* line 568, ../sass/main.scss */
-.avatar.android {
-  background-image: url(../img/avatars/android.png);
-}
-/* line 571, ../sass/main.scss */
-.avatar.ios {
-  background-image: url(../img/avatars/ios.png);
-}
-/* line 574, ../sass/main.scss */
-.avatar.big-data {
-  background-image: url(../img/avatars/big-data.png);
-}
-/* line 577, ../sass/main.scss */
-.avatar.active-user {
-  background-image: url(../img/avatars/active-user.jpg);
-}
-/* line 580, ../sass/main.scss */
-.avatar.scrum {
-  background-image: url(../img/icon-scrum.png);
-}
-/* line 583, ../sass/main.scss */
-.avatar.web {
-  background-image: url(../img/icon-web.png);
-}
-/* line 586, ../sass/main.scss */
-.avatar.ecommerce {
-  background-image: url(../img/icon-ecommerce.png);
-}
-/* line 589, ../sass/main.scss */
-.avatar.architects {
-  background-image: url(../img/icon-architects.png);
-}
-/* line 592, ../sass/main.scss */
-.avatar.product-managers {
-  background-image: url(../img/icon-product-managers.png);
-}
-/* line 595, ../sass/main.scss */
-.avatar.engineering-managers {
-  background-image: url(../img/icon-engineering-managers.png);
-}
-/* line 599, ../sass/main.scss */
-.avatar .coffee {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  border: 2px solid #fff;
-  position: absolute;
-  display: block;
-  top: -15px;
-  right: -15px;
-  background-color: #F5A623;
-  background-position: 11px center;
-  background-repeat: no-repeat;
-  background-image: url(../img/icon-coffee.png);
-  cursor: pointer;
-}
-/* line 615, ../sass/main.scss */
-.avatar .openings {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  border: 2px solid #fff;
-  position: absolute;
-  display: block;
-  top: -15px;
-  right: -15px;
-  background-color: #F5A623;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  background-image: url(../img/icon-briefcase.png);
-  cursor: pointer;
-  line-height: 44px;
-  font-weight: bold;
-  color: #F5A623;
-  font-size: 12px;
-}
-
-/* line 639, ../sass/main.scss */
-ul.methodologies li a {
-  height: 60px;
-  background-repeat: no-repeat;
-  background-position: center 28px;
-  padding-top: 100px !important;
-}
-/* line 645, ../sass/main.scss */
-ul.methodologies li a.kanban {
-  background-image: url(../img/icon-kanban.png);
-}
-/* line 648, ../sass/main.scss */
-ul.methodologies li a.release {
-  background-image: url(../img/icon-release-frequency.png);
-}
-/* line 651, ../sass/main.scss */
-ul.methodologies li a.sprint {
-  background-image: url(../img/icon-sprint.png);
-}
-/* line 654, ../sass/main.scss */
-ul.methodologies li a.jasmine {
-  background-image: url(../img/icon-jasmine.png);
-}
-/* line 657, ../sass/main.scss */
-ul.methodologies li a.meetings {
-  background-image: url(../img/icon-meetings.png);
-}
-/* line 660, ../sass/main.scss */
-ul.methodologies li a.jira {
-  background-image: url(../img/icon-jira.png);
-}
-/* line 663, ../sass/main.scss */
-ul.methodologies li a h3 {
-  font-size: 18px;
-}
-
-/* line 672, ../sass/main.scss */
-.panel {
-  background-color: #fff;
-  margin-bottom: 24px;
-  padding-top: 24px;
-  border: 1px solid #dcdcdc;
-  position: relative;
-}
-/* line 679, ../sass/main.scss */
-.panel h2 {
-  font-size: 24px;
-  padding-left: 24px;
-}
-/* line 684, ../sass/main.scss */
-.panel .icon-info {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 20px;
-  height: 20px;
-  background-image: url(../img/icon-info.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-/* line 695, ../sass/main.scss */
-.pure-u-1-4 .avatar, .pure-u-1-3 .avatar {
-  width: 96px;
-  height: 96px;
-}
-
-/* line 699, ../sass/main.scss */
-.pure-u-1-2 .avatar {
-  width: 136px;
-  height: 136px;
-}
-
-/* line 703, ../sass/main.scss */
-ul.grid {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-family: "Roboto Condensed", sans-serif;
-  text-transform: capitalize;
-}
-/* line 713, ../sass/main.scss */
-ul.grid.team li a {
-  min-height: 195px;
-}
-/* line 718, ../sass/main.scss */
-ul.grid li {
-  text-align: center;
-}
-/* line 721, ../sass/main.scss */
-ul.grid li a {
-  text-decoration: none;
-  color: #4a4a4a;
-  display: block;
-  padding: 40px 0;
-}
-/* line 727, ../sass/main.scss */
-ul.grid li p {
-  padding: 0 24px;
-  text-transform: none;
-}
-/* line 731, ../sass/main.scss */
-ul.grid li p em {
-  color: #4a4a4a;
-}
-/* line 736, ../sass/main.scss */
-ul.grid li h3 {
-  font-weight: 400;
-  font-size: 24px;
-  margin: 8px 0 0 0;
-}
-/* line 741, ../sass/main.scss */
-ul.grid li h4 {
-  font-weight: 700;
-  font-size: 11px;
-  text-transform: uppercase;
-  color: #9b9b9b;
-  margin: -4px 0 0 0;
-}
-/* line 750, ../sass/main.scss */
-ul.grid.borders {
-  border-left: 1px solid #dcdcdc;
-  border-top: 1px solid #dcdcdc;
-}
-/* line 756, ../sass/main.scss */
-ul.grid.borders li a {
-  border-bottom: 1px solid #dcdcdc;
-  border-right: 1px solid #dcdcdc;
-}
-
-/* line 763, ../sass/main.scss */
-ul.list {
-  margin: 0;
-  padding: 0;
-}
-/* line 767, ../sass/main.scss */
-ul.list li {
-  border-bottom: 1px solid #dcdcdc;
-  padding-top: 8px;
-  padding-left: 48px;
-  background-repeat: no-repeat;
-  background-position: 24px center;
-  min-height: 40px;
-  position: relative;
-}
-/* line 776, ../sass/main.scss */
-ul.list li:first-child {
-  border-top: 1px solid #dcdcdc;
-}
-/* line 780, ../sass/main.scss */
-ul.list li.y-combinator {
-  background-image: url(../img/icon-ycombinator.png);
-}
-/* line 783, ../sass/main.scss */
-ul.list li.felicis-ventures {
-  background-image: url(../img/icon-felicis-ventures.png);
-}
-/* line 786, ../sass/main.scss */
-ul.list li.union-square-ventures {
-  background-image: url(../img/icon-union-square-ventures.png);
-}
-/* line 789, ../sass/main.scss */
-ul.list li.ruby-on-rails {
-  background-image: url(../img/icon-ruby-on-rails.png);
-}
-/* line 792, ../sass/main.scss */
-ul.list li.google-apps {
-  background-image: url(../img/icon-google-apps.png);
-}
-/* line 795, ../sass/main.scss */
-ul.list li.python {
-  background-image: url(../img/icon-python.png);
-}
-/* line 798, ../sass/main.scss */
-ul.list li.django {
-  background-image: url(../img/icon-django.png);
-}
-/* line 801, ../sass/main.scss */
-ul.list li.html5 {
-  background-image: url(../img/icon-html5.png);
-}
-/* line 804, ../sass/main.scss */
-ul.list li.bootstrap {
-  background-image: url(../img/icon-bootstrap.png);
-}
-/* line 807, ../sass/main.scss */
-ul.list li.github {
-  background-image: url(../img/icon-github-2.png);
-}
-/* line 810, ../sass/main.scss */
-ul.list li.mongo {
-  background-image: url(../img/icon-mongo.png);
-}
-/* line 813, ../sass/main.scss */
-ul.list li.ember {
-  background-image: url(../img/icon-ember.png);
-}
-/* line 816, ../sass/main.scss */
-ul.list li.slack {
-  background-image: url(../img/icon-slack.png);
-}
-/* line 819, ../sass/main.scss */
-ul.list li.asana {
-  background-image: url(../img/icon-asana.png);
-}
-/* line 822, ../sass/main.scss */
-ul.list li.dropbox {
-  background-image: url(../img/icon-dropbox.png);
-}
-/* line 825, ../sass/main.scss */
-ul.list li.screenhero {
-  background-image: url(../img/icon-screenhero.png);
-}
-/* line 828, ../sass/main.scss */
-ul.list li.beanstalk {
-  background-image: url(../img/icon-beanstalk.png);
-}
-/* line 831, ../sass/main.scss */
-ul.list li.less {
-  background-image: url(../img/icon-less.png);
-}
-/* line 834, ../sass/main.scss */
-ul.list li.training {
-  background-image: none;
-  padding-left: 0;
-}
-/* line 839, ../sass/main.scss */
-ul.list li.sigma-1 .avatar {
-  background-image: url(../img/avatars/sigma-1.jpg);
-}
-/* line 844, ../sass/main.scss */
-ul.list li.sigma-3 .avatar {
-  background-image: url(../img/avatars/sigma-3.jpg);
-}
-/* line 849, ../sass/main.scss */
-ul.list li.sigma-6 .avatar {
-  background-image: url(../img/avatars/sigma-6.jpg);
-}
-/* line 854, ../sass/main.scss */
-ul.list li.ambassador .avatar {
-  background-image: url(../img/avatars/robert-bogue.jpg);
-}
-/* line 858, ../sass/main.scss */
-ul.list li .avatar {
-  width: 36px;
-  height: 36px;
-  position: absolute;
-  top: 10px;
-  left: 16px;
-  box-shadow: none;
-  border: 0;
-}
-/* line 868, ../sass/main.scss */
-ul.list li p {
-  font-family: "Roboto Condensed", sans-serif;
-  margin: 0;
-  padding: 0 0 0 24px;
-}
-/* line 873, ../sass/main.scss */
-ul.list li p.name {
-  font-size: 16px;
-  font-weight: 700;
-}
-/* line 878, ../sass/main.scss */
-ul.list li p.description {
-  font-size: 12px;
-  color: #9b9b9b;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-
-/* line 887, ../sass/main.scss */
-.about {
-  padding-top: 24px;
-}
-/* line 892, ../sass/main.scss */
-.about .description p, .about .description h1, .about .description h2, .about .description h3, .about .description h4, .about .description h5 {
-  padding-right: 60px;
-}
-/* line 899, ../sass/main.scss */
-.about .funding h2 {
-  padding: 0 0 0 24px;
-}
-/* line 903, ../sass/main.scss */
-.about .funding ul {
-  margin: 0;
-  list-style-type: none;
-  padding: 0;
-}
-/* line 912, ../sass/main.scss */
-.about .funding ul.rounds li p {
-  font-size: 16px;
-  font-family: "Roboto Condensed", sans-serif;
-  margin: 0;
-  padding: 0 0 0 24px;
-}
-/* line 918, ../sass/main.scss */
-.about .funding ul.rounds li p.round {
-  font-weight: 300;
-}
-/* line 922, ../sass/main.scss */
-.about .funding ul.rounds li p.amount {
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-/* line 933, ../sass/main.scss */
-.about .funding ul.investors li {
-  border-bottom: 1px solid #dcdcdc;
-  padding-top: 8px;
-  padding-left: 48px;
-  background-repeat: no-repeat;
-  background-position: 24px center;
-}
-/* line 940, ../sass/main.scss */
-.about .funding ul.investors li:first-child {
-  border-top: 1px solid #dcdcdc;
-}
-/* line 944, ../sass/main.scss */
-.about .funding ul.investors li.y-combinator {
-  background-image: url(../img/icon-ycombinator.png);
-}
-/* line 947, ../sass/main.scss */
-.about .funding ul.investors li.felicis-ventures {
-  background-image: url(../img/icon-felicis-ventures.png);
-}
-/* line 950, ../sass/main.scss */
-.about .funding ul.investors li.union-square-ventures {
-  background-image: url(../img/icon-union-square-ventures.png);
-}
-/* line 954, ../sass/main.scss */
-.about .funding ul.investors li p {
-  font-family: "Roboto Condensed", sans-serif;
-  margin: 0;
-  padding: 0 0 0 24px;
-}
-/* line 959, ../sass/main.scss */
-.about .funding ul.investors li p.name {
-  font-size: 16px;
-  font-weight: 700;
-}
-/* line 964, ../sass/main.scss */
-.about .funding ul.investors li p.description {
-  font-size: 12px;
-  color: #9b9b9b;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-/* line 972, ../sass/main.scss */
-.about .funding ul.investors li:last-child {
-  border-bottom: 0;
-}
-
-/* line 982, ../sass/main.scss */
-.social ul {
-  margin: 0 auto;
-  padding: 0 24px;
-}
-/* line 988, ../sass/main.scss */
-.social ul li a {
-  display: block;
-  background-position: center center;
-  background-repeat: no-repeat;
-  text-indent: -5000px;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  cursor: pointer;
-}
-/* line 998, ../sass/main.scss */
-.social ul li a:hover {
-  opacity: 1;
-}
-/* line 1002, ../sass/main.scss */
-.social ul li a.linkedin {
-  background-image: url(../img/icon-linkedin.png);
-}
-/* line 1005, ../sass/main.scss */
-.social ul li a.twitter {
-  background-image: url(../img/icon-twitter.png);
-}
-/* line 1008, ../sass/main.scss */
-.social ul li a.spotify {
-  background-image: url(../img/icon-spotify.png);
-}
-/* line 1011, ../sass/main.scss */
-.social ul li a.instagram {
-  background-image: url(../img/icon-instagram.png);
-}
-/* line 1014, ../sass/main.scss */
-.social ul li a.facebook {
-  background-image: url(../img/icon-facebook.png);
-}
-/* line 1017, ../sass/main.scss */
-.social ul li a.github {
-  background-image: url(../img/icon-github.png);
-}
-
-/* line 1026, ../sass/main.scss */
-.connect ul {
-  margin: 0;
-  padding: 0;
-}
-/* line 1032, ../sass/main.scss */
-.connect ul li a {
-  background-color: #F5A623;
-  color: #fff;
-  max-height: 30px;
-  padding: 10px;
-  margin: 0 10px;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: 10px center;
-}
-/* line 1042, ../sass/main.scss */
-.connect ul li a.coffee {
-  background-image: url(../img/icon-coffee.png);
-}
-/* line 1045, ../sass/main.scss */
-.connect ul li a.follow {
-  background-image: url(../img/icon-follow.png);
-}
-
-/* line 1054, ../sass/main.scss */
-.events li {
-  background-position: 24px center;
-  background-image: url(../img/icon-event.png);
-  background-repeat: no-repeat;
-}
-/* line 1059, ../sass/main.scss */
-.events li .date {
-  position: absolute;
-  width: 30px;
-  text-align: center;
-  top: 27px;
-  left: 24px;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: #4a4a4a;
-}
-
-/* line 1074, ../sass/main.scss */
-.community-involvement p {
-  padding: 0 24px 12px 24px;
-}
-
-/* line 1078, ../sass/main.scss */
-.close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  opacity: 0.5;
-  background-position: center center;
-  width: 20px;
-  height: 20px;
-  display: block;
-  background-repeat: no-repeat;
-  background-image: url(../img/icon-close.png);
-  cursor: pointer;
-  z-index: 1005;
-}
-/* line 1092, ../sass/main.scss */
-.close:hover {
-  opacity: 1;
-}
-
-/* line 1098, ../sass/main.scss */
-.media ul {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-/* line 1103, ../sass/main.scss */
-.media ul li {
-  position: relative;
-}
-/* line 1107, ../sass/main.scss */
-.media ul li.pure-u-1-6 {
-  height: 120px;
-}
-/* line 1110, ../sass/main.scss */
-.media ul li.pure-u-1-2 {
-  height: 240px;
-}
-/* line 1114, ../sass/main.scss */
-.media ul li a {
-  position: relative;
-  display: block;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #D8D8D8;
-  background-size: cover;
-  margin: 1px;
-  height: 99%;
-  padding: 0;
-}
-/* line 1125, ../sass/main.scss */
-.media ul li a.video {
-  background-image: url(../img/icon-placeholder-video.png);
-}
-/* line 1128, ../sass/main.scss */
-.media ul li a.music {
-  background-image: url(../img/icon-placeholder-music.png);
-}
-/* line 1131, ../sass/main.scss */
-.media ul li a.photo {
-  background-image: url(../img/icon-placeholder-photo.png);
-}
-/* line 1134, ../sass/main.scss */
-.media ul li a.team-1 {
-  background-image: url(../img/team/team-1.jpg);
-}
-/* line 1137, ../sass/main.scss */
-.media ul li a.team-2 {
-  background-image: url(../img/team/team-2.jpg);
-}
-/* line 1140, ../sass/main.scss */
-.media ul li a.team-3 {
-  background-image: url(../img/team/team-3.jpg);
-}
-/* line 1143, ../sass/main.scss */
-.media ul li a.team-4 {
-  background-image: url(../img/team/team-4.jpg);
-}
-/* line 1146, ../sass/main.scss */
-.media ul li a.team-5 {
-  background-image: url(../img/team/team-5.jpg);
-}
-/* line 1149, ../sass/main.scss */
-.media ul li a.team-6 {
-  background-image: url(../img/team/team-6.jpg);
-}
-/* line 1152, ../sass/main.scss */
-.media ul li a.team-7 {
-  background-image: url(../img/team/team-7.jpg);
-}
-/* line 1155, ../sass/main.scss */
-.media ul li a.team-8 {
-  background-image: url(../img/team/team-8.jpg);
-}
-/* line 1158, ../sass/main.scss */
-.media ul li a.team-9 {
-  background-image: url(../img/team/team-9.jpg);
-}
-/* line 1161, ../sass/main.scss */
-.media ul li a.team-10 {
-  background-image: url(../img/team/team-10.jpg);
-}
-/* line 1164, ../sass/main.scss */
-.media ul li a.team-11 {
-  background-image: url(../img/team/team-11.jpg);
-}
-/* line 1167, ../sass/main.scss */
-.media ul li a.team-12 {
-  background-image: url(../img/team/team-12.jpg);
-}
-/* line 1170, ../sass/main.scss */
-.media ul li a.workspace-1 {
-  background-image: url(../img/workspace-1.jpg);
-}
-/* line 1173, ../sass/main.scss */
-.media ul li a.workspace-2 {
-  background-image: url(../img/workspace-2.jpg);
-}
-/* line 1176, ../sass/main.scss */
-.media ul li a.workspace-3 {
-  background-image: url(../img/workspace-3.jpg);
-}
-/* line 1179, ../sass/main.scss */
-.media ul li a.workspace-4 {
-  background-image: url(../img/workspace-4.jpg);
-}
-
-/* line 1187, ../sass/main.scss */
-.footer {
-  height: 240px;
-  background-color: #fff;
-  border-top: 1px solid #dcdcdc;
-  margin-top: 48px;
-}
-/* line 1193, ../sass/main.scss */
-.footer h6 {
-  font-size: 12px;
-}
-/* line 1196, ../sass/main.scss */
-.footer ul {
-  padding: 0 24px 0 0;
-}
-/* line 1198, ../sass/main.scss */
-.footer ul li {
-  padding: 0;
-  margin: 0;
-}
-/* line 1202, ../sass/main.scss */
-.footer ul li p {
-  font-size: 12px;
-  padding: 0;
-  margin: 0;
-}
-/* line 1208, ../sass/main.scss */
-.footer ul li a {
-  font-size: 12px;
-  font-family: "Roboto Slab", sans-serif;
-  text-decoration: underline;
-}
-
-/* line 1217, ../sass/main.scss */
-.anecdote {
-  padding: 80px 20px;
-  text-align: center;
-}
-/* line 1221, ../sass/main.scss */
-.anecdote p {
-  font-family: "Roboto Slab", sans-serif;
-  font-size: 16px;
-}
-
-/* line 1227, ../sass/main.scss */
-ul.management {
-  display: none;
-}
-
-/* line 1230, ../sass/main.scss */
-ul.engineering {
-  display: block;
-}
-
-/* line 1233, ../sass/main.scss */
-ul.product {
-  display: none;
-}
-
-/* line 1236, ../sass/main.scss */
-.profile {
-  display: none;
-}
-
-/* line 1240, ../sass/main.scss */
-.carrot-confidential {
-  width: 100%;
-  background-color: #4a4a4a;
-  color: #fff;
-}
-
-/* line 1247, ../sass/main.scss */
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 1001;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* line 1258, ../sass/main.scss */
-.lightbox .background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.7;
-  z-index: 1002;
-}
-/* line 1271, ../sass/main.scss */
-.lightbox .modal {
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  margin-left: -240px;
-  width: 480px;
-  height: 360px;
-  background-color: #efefef;
-  border: 5px solid #fff;
-  z-index: 1003;
-}
-/* line 1282, ../sass/main.scss */
-.lightbox .modal .message {
-  padding: 20px;
-  position: relative;
-}
-/* line 1286, ../sass/main.scss */
-.lightbox .modal .message h1 {
-  font-family: "Roboto Condensed", sans-serif;
-}
-/* line 1290, ../sass/main.scss */
-.lightbox .modal .message textarea {
-  width: 100%;
-  height: 160px;
-  border-color: #dcdcdc;
-  margin-bottom: 30px;
-}
-/* line 1297, ../sass/main.scss */
-.lightbox .modal .message a {
-  cursor: pointer;
-}
-
-/* line 1304, ../sass/main.scss */
+/* line 259, ../sass/main.scss */
 .growl {
   position: fixed;
   display: none;
@@ -1737,7 +614,7 @@ ul.product {
 /*
  * Image replacement
  */
-/* line 1324, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1746,7 +623,7 @@ ul.product {
   *text-indent: -9999px;
 }
 
-/* line 1332, ../sass/main.scss */
+/* line 287, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1757,7 +634,7 @@ ul.product {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 1343, ../sass/main.scss */
+/* line 298, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -1766,7 +643,7 @@ ul.product {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 1352, ../sass/main.scss */
+/* line 307, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1782,7 +659,7 @@ ul.product {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 1368, ../sass/main.scss */
+/* line 323, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1796,7 +673,7 @@ ul.product {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 1382, ../sass/main.scss */
+/* line 337, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -1812,18 +689,18 @@ ul.product {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 1398, ../sass/main.scss */
+/* line 353, ../sass/main.scss */
 .clearfix {
   zoom: 1;
 }
-/* line 1400, ../sass/main.scss */
+/* line 355, ../sass/main.scss */
 .clearfix:before, .clearfix:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-/* line 1406, ../sass/main.scss */
+/* line 361, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1844,7 +721,7 @@ ul.product {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 1434, ../sass/main.scss */
+  /* line 389, ../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1853,18 +730,18 @@ ul.product {
     text-shadow: none !important;
   }
 
-  /* line 1441, ../sass/main.scss */
+  /* line 396, ../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 1446, ../sass/main.scss */
+  /* line 401, ../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 1450, ../sass/main.scss */
+  /* line 405, ../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1872,33 +749,33 @@ ul.product {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 1458, ../sass/main.scss */
+  /* line 413, ../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 1464, ../sass/main.scss */
+  /* line 419, ../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 1470, ../sass/main.scss */
+  /* line 425, ../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 1474, ../sass/main.scss */
+  /* line 429, ../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 1479, ../sass/main.scss */
+  /* line 434, ../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -1906,7 +783,7 @@ ul.product {
   @page {
     margin: 0.5cm;
   }
-  /* line 1487, ../sass/main.scss */
+  /* line 442, ../sass/main.scss */
   p,
   h2,
   h3 {
@@ -1914,7 +791,7 @@ ul.product {
     widows: 3;
   }
 
-  /* line 1494, ../sass/main.scss */
+  /* line 449, ../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;
